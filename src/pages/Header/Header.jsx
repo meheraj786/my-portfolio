@@ -19,10 +19,10 @@ function Header() {
           </ul>
         </div>
         <div className="right">
-          <button>Let's Talk <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffff" class="bi bi-arrow-up-right" 
-          viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
-</svg></button>
+          <button id='button' className='flex items-center'>Let's Talk                 <span className="p-[8px] ml-[8px] rounded-full bg-[#C9F31D]">
+                <svg className="rotate-45" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 15 15"><path fill="currentColor" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"/></svg>
+
+                </span> </button>
           
         </div>
       </div>
