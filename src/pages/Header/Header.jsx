@@ -1,48 +1,27 @@
 import React from 'react'
+import Logo from '../Logo'
+import { NavLink } from 'react-router-dom'
 
 function Header() {
   return (
-  <>
-    <div id="navbar bg-[#1C1C1C]">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-2">
-            <nav className="navbar navbar-expand-lg navbar-light">
-              <a className="navbar-brand" href="/">Meheraj</a>
-              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav ml-auto">
-                  <li className="nav-item">
-                    <a className="nav-link" href="#banner">Home</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#about">About</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#service">Service</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#skill">Skill</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#projects">Projects</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#blog">Blog</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
+    <nav className='bg-[#1C1C1C] text-white pt-[24px] pb-[24px]'>
+      <div className='container flex justify-between items-center'>
+        <Logo/>
+        <div className="navlist mx-auto">
+          <ul className='flex items-center'>
+            <li className='mx-[17px]'><NavLink to="/">Home</NavLink></li>
+            <li className='mx-[17px]'><NavLink to="about">About</NavLink></li>
+            <li className='mx-[17px]'><NavLink to="#service">Services</NavLink></li>
+            <li className='mx-[17px]'><NavLink to="skill">Skill</NavLink></li>
+            <li className='mx-[17px]'><NavLink to="projects">Projects</NavLink></li>
+            <li className='mx-[17px]'><NavLink to="contact">Contact</NavLink></li>
+          </ul>
+        </div>
+        <div className="right">
+          
         </div>
       </div>
-    </div>
-  </>
+    </nav>
   )
 }
 
