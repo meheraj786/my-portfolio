@@ -162,6 +162,7 @@ nav{
   top: 40%;
   left: -20%;
   color: var(--bg);
+  border: 2px solid white;
 }
 #about #aboutImg .p2{
   position: absolute;
@@ -170,13 +171,12 @@ nav{
   color: var(--bg);
 }
 
-#about .grid:hover .aboutShape{
-  border-radius: 100%;
+#about #aboutImg:hover {
   box-shadow: 
 
     0 0 60px var(--neon),
     0 0 70px var(--neon);
-    fill: var(--bg);
+    
 }
 
 #about #aboutImg .aboutShape{
