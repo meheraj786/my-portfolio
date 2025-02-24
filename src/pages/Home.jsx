@@ -73,7 +73,43 @@ function Home() {
       </div>
       {/* marquee start */}
       {/* about start  */}
-      <div id="about"></div>
+      <div id="about">
+        <div className="container py-[148px]">
+          <div className="grid grid-cols-12 bg-black px-[71px] py-[91px] rounded-[10px]">
+          <div className='col-span-6'>
+          <p>About Me</p>
+            <h2 className="w-[515px] text-[32px] font-bold">Professional <span className="text-[#C9F31D] inline-block">Problem Solutions</span>
+            For Digital Products</h2>
+            <p className="w-[350px] mt-[16px] mb-[35px]">Sed ut perspiciatis unde omnis iste natus to
+voluptatem accusantium doloremque
+laudantium, totam rem aperiamc</p>
+<div className="grid grid-cols-12">
+  <div className="col-span-6">
+    <p className="flex items-center"><span className="p-[12px] bg-[#C9F31D] rounded-full mr-[13px]"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16"><path fill="black" d="M8.5.75a.75.75 0 0 0-1.5 0v5.19L4.391 3.33a.75.75 0 1 0-1.06 1.061L5.939 7H.75a.75.75 0 0 0 0 1.5h5.19l-2.61 2.609a.75.75 0 1 0 1.061 1.06L7 9.561v5.189a.75.75 0 0 0 1.5 0V9.56l2.609 2.61a.75.75 0 1 0 1.06-1.061L9.561 8.5h5.189a.75.75 0 0 0 0-1.5H9.56l2.61-2.609a.75.75 0 0 0-1.061-1.06L8.5 5.939z"/></svg></span>Front-end Web Design</p>
+  </div>
+  <div className="col-span-6">
+<p className="flex items-center mb-[25px]"><span className="p-[12px] bg-[#C9F31D] rounded-full mr-[13px]"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16"><path fill="black" d="M8.5.75a.75.75 0 0 0-1.5 0v5.19L4.391 3.33a.75.75 0 1 0-1.06 1.061L5.939 7H.75a.75.75 0 0 0 0 1.5h5.19l-2.61 2.609a.75.75 0 1 0 1.061 1.06L7 9.561v5.189a.75.75 0 0 0 1.5 0V9.56l2.609 2.61a.75.75 0 1 0 1.06-1.061L9.561 8.5h5.189a.75.75 0 0 0 0-1.5H9.56l2.61-2.609a.75.75 0 0 0-1.061-1.06L8.5 5.939z"/></svg></span>Back-end Web Dev</p>
+  </div>
+  <div className="col-span-6">
+    <p className="flex items-center"><span className="p-[12px] bg-[#C9F31D] rounded-full mr-[13px]"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16"><path fill="black" d="M8.5.75a.75.75 0 0 0-1.5 0v5.19L4.391 3.33a.75.75 0 1 0-1.06 1.061L5.939 7H.75a.75.75 0 0 0 0 1.5h5.19l-2.61 2.609a.75.75 0 1 0 1.061 1.06L7 9.561v5.189a.75.75 0 0 0 1.5 0V9.56l2.609 2.61a.75.75 0 1 0 1.06-1.061L9.561 8.5h5.189a.75.75 0 0 0 0-1.5H9.56l2.61-2.609a.75.75 0 0 0-1.061-1.06L8.5 5.939z"/></svg></span>Front-end Web Design</p>
+  </div>
+  <div className="col-span-6">
+<p className="flex items-center"><span className="p-[12px] bg-[#C9F31D] rounded-full mr-[13px]"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16"><path fill="black" d="M8.5.75a.75.75 0 0 0-1.5 0v5.19L4.391 3.33a.75.75 0 1 0-1.06 1.061L5.939 7H.75a.75.75 0 0 0 0 1.5h5.19l-2.61 2.609a.75.75 0 1 0 1.061 1.06L7 9.561v5.189a.75.75 0 0 0 1.5 0V9.56l2.609 2.61a.75.75 0 1 0 1.06-1.061L9.561 8.5h5.189a.75.75 0 0 0 0-1.5H9.56l2.61-2.609a.75.75 0 0 0-1.061-1.06L8.5 5.939z"/></svg></span>Back-end Web Dev</p>
+  </div>
+
+</div>
+
+          </div>
+          <div className="col-span-6 ">
+            <div id="aboutImg" className="w-[346px] h-[363px] bg-amber-50 mx-auto rounded-[10px]">
+            <span className="aboutShape"><svg xmlns="http://www.w3.org/2000/svg" width="77" height="77" viewBox="0 0 16 16"><path fill="#C9F31D" d="M8.5.75a.75.75 0 0 0-1.5 0v5.19L4.391 3.33a.75.75 0 1 0-1.06 1.061L5.939 7H.75a.75.75 0 0 0 0 1.5h5.19l-2.61 2.609a.75.75 0 1 0 1.061 1.06L7 9.561v5.189a.75.75 0 0 0 1.5 0V9.56l2.609 2.61a.75.75 0 1 0 1.06-1.061L9.561 8.5h5.189a.75.75 0 0 0 0-1.5H9.56l2.61-2.609a.75.75 0 0 0-1.061-1.06L8.5 5.939z"/></svg></span>
+            <p className="py-[13px] p1 rounded-[20px] px-[15px] bg-white">MERN Stack Developer</p>
+            <p className="py-[13px] p2 rounded-[20px] px-[44px] bg-white">Meheraj Hosen</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
       {/* about end  */}
       {/* service start  */}
       <div id="service"></div>
@@ -97,4 +133,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home

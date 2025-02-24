@@ -146,3 +146,33 @@ nav{
   1px -1px 0 var(--bg),
   -1px 1px 0 var(--bg);
 }
+#about #aboutImg{
+  position: relative;
+}
+
+#about #aboutImg:hover .p1{
+  border: 2px solid var(--neon);
+}
+#about #aboutImg:hover .p2{
+  border: 2px solid var(--neon);
+}
+
+#about #aboutImg .p1, .p2{
+  position: absolute;
+  top: 40%;
+  left: -20%;
+  color: var(--bg);
+}
+#about #aboutImg .p2{
+  position: absolute;
+  top: 65%;
+  left: -30%;
+  color: var(--bg);
+}
+
+#about #aboutImg .aboutShape{
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
