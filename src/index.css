@@ -170,9 +170,28 @@ nav{
   color: var(--bg);
 }
 
+#about .grid:hover .aboutShape{
+  border-radius: 100%;
+  box-shadow: 
+
+    0 0 60px var(--neon),
+    0 0 70px var(--neon);
+    fill: var(--bg);
+}
+
 #about #aboutImg .aboutShape{
   position: absolute;
-  top: 0;
-  left: 0;
-  
+  top: -5%;
+  left: -40%;
+  animation: rotation 10s infinite linear;
+
+}
+
+@keyframes rotation{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
