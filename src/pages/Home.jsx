@@ -1,11 +1,12 @@
 import React from "react";
 import bannerShape from "../assets/Group 31.png";
+import "../css/home.css"
 
 function Home() {
   return (
     <>
       {/* banner start  */}
-      <div id="banner">
+      <div className="banner">
         <div className="container pt-[113px] pb-[98px]">
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12 lg:col-span-5">
@@ -45,7 +46,7 @@ function Home() {
       </div>
       {/* banner end  */}
       {/* marquee start */}
-      <div id="marquee" className="flex items-center">
+      <div className="marquee flex items-center">
         <marquee behavior="" direction="" scrollmount="200">
         <span><svg xmlns="http://www.w3.org/2000/svg" width="77" height="77" viewBox="0 0 16 16"><path fill="currentColor" d="M8.5.75a.75.75 0 0 0-1.5 0v5.19L4.391 3.33a.75.75 0 1 0-1.06 1.061L5.939 7H.75a.75.75 0 0 0 0 1.5h5.19l-2.61 2.609a.75.75 0 1 0 1.061 1.06L7 9.561v5.189a.75.75 0 0 0 1.5 0V9.56l2.609 2.61a.75.75 0 1 0 1.06-1.061L9.561 8.5h5.189a.75.75 0 0 0 0-1.5H9.56l2.61-2.609a.75.75 0 0 0-1.061-1.06L8.5 5.939z"/></svg></span>
           <h2>Web Developer</h2>
@@ -73,7 +74,7 @@ function Home() {
       </div>
       {/* marquee start */}
       {/* about start  */}
-      <div id="about">
+      <div className="about">
         <div className="container py-[148px]">
           <div className="grid grid-cols-12 bg-black px-[71px] py-[91px] rounded-[10px]">
           <div className='lg:col-span-6'>
@@ -101,7 +102,7 @@ laudantium, totam rem aperiamc</p>
 
           </div>
           <div className="lg:col-span-6 ">
-            <div id="aboutImg" className="w-[346px] h-[363px] bg-amber-50 mx-auto rounded-[10px]">
+            <div  className="w-[346px] h-[363px] aboutImg bg-amber-50 mx-auto rounded-[10px]">
             <span className="aboutShape"><svg xmlns="http://www.w3.org/2000/svg" width="77" height="77" viewBox="0 0 16 16"><path fill="#C9F31D" d="M8.5.75a.75.75 0 0 0-1.5 0v5.19L4.391 3.33a.75.75 0 1 0-1.06 1.061L5.939 7H.75a.75.75 0 0 0 0 1.5h5.19l-2.61 2.609a.75.75 0 1 0 1.061 1.06L7 9.561v5.189a.75.75 0 0 0 1.5 0V9.56l2.609 2.61a.75.75 0 1 0 1.06-1.061L9.561 8.5h5.189a.75.75 0 0 0 0-1.5H9.56l2.61-2.609a.75.75 0 0 0-1.061-1.06L8.5 5.939z"/></svg></span>
             <p className="py-[13px] p1 rounded-[20px] px-[15px] bg-white">MERN Stack Developer</p>
             <p className="py-[13px] p2 rounded-[20px] px-[44px] bg-white">Meheraj Hosen</p>
@@ -112,39 +113,70 @@ laudantium, totam rem aperiamc</p>
       </div>
       {/* about end  */}
       {/* service start  */}
-      <div id="services pt-[109px] pb-[139px]">
-        <div className="container">
-          <div className="serviceTitle text-center">
-            <p>Popular Services</p>
-            <h2 className="w-[600px] mx-auto font-bold text-[42px] text-center">My <span className="text-[#C9F31D]">Special Service</span> For your Business Development</h2>
-          </div>
-          <div className="grid grid-cols-12">
-            <div className="col-span-6 ">
+      <div className="service pt-[109px] pb-[139px]">
+      <span className="seriveShape"><svg xmlns="http://www.w3.org/2000/svg" width="77" height="77" viewBox="0 0 16 16"><path fill="#C9F31D" d="M8.5.75a.75.75 0 0 0-1.5 0v5.19L4.391 3.33a.75.75 0 1 0-1.06 1.061L5.939 7H.75a.75.75 0 0 0 0 1.5h5.19l-2.61 2.609a.75.75 0 1 0 1.061 1.06L7 9.561v5.189a.75.75 0 0 0 1.5 0V9.56l2.609 2.61a.75.75 0 1 0 1.06-1.061L9.561 8.5h5.189a.75.75 0 0 0 0-1.5H9.56l2.61-2.609a.75.75 0 0 0-1.061-1.06L8.5 5.939z"/></svg></span>
+    <div className="container">
+      <div className="serviceTitle mb-[40px] text-center">
+        <p>Popular Services</p>
+        <h2 className="w-[600px] mx-auto font-bold text-[42px] text-center">My <span className="text-[#C9F31D]">Special Service</span> For your Business Development</h2>
+      </div>
+      <div className="grid grid-cols-12">
+        <div className="col-span-6 ">
 <div className="box flex items-center justify-between w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
 <div className="text">
 <h3 className="text-[32px] text-bold text-white">Responsive Web Design</h3>
 <p className="text-[16px]">Responsive web design for any device</p>
 </div>
-<div className="icon p-[12px] bg-[#C9F31D] rounded-full">
-  <span className="">
-  <svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16"><path  fill="currentColor" d="M8.5.75a.75.75 0 0 0-1.5 0v5.19L4.391 3.33a.75.75 0 1 0-1.06 1.061L5.939 7H.75a.75.75 0 0 0 0 1.5h5.19l-2.61 2.609a.75.75 0 1 0 1.061 1.06L7 9.561v5.189a.75.75 0 0 0 1.5 0V9.56l2.609 2.61a.75.75 0 1 0 1.06-1.061L9.561 8.5h5.189a.75.75 0 0 0 0-1.5H9.56l2.61-2.609a.75.75 0 0 0-1.061-1.06L8.5 5.939z"/></svg>
-  </span>
+<div className="icon p-[12px] bg-[#000] rounded-full">
+<span className="">
+<svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16"><path  fill="currentColor" d="M8.5.75a.75.75 0 0 0-1.5 0v5.19L4.391 3.33a.75.75 0 1 0-1.06 1.061L5.939 7H.75a.75.75 0 0 0 0 1.5h5.19l-2.61 2.609a.75.75 0 1 0 1.061 1.06L7 9.561v5.189a.75.75 0 0 0 1.5 0V9.56l2.609 2.61a.75.75 0 1 0 1.06-1.061L9.561 8.5h5.189a.75.75 0 0 0 0-1.5H9.56l2.61-2.609a.75.75 0 0 0-1.061-1.06L8.5 5.939z"/></svg>
+</span>
 </div>
 </div>
-            </div>
-            <div className="col-span-6 ml-auto">
-world
-            </div>
-            <div className="col-span-6">
-hello
-            </div>
-            <div className="col-span-6 ml-auto">
-world
-            </div>
-
-          </div>
         </div>
+        <div className="col-span-6 ml-auto">
+        <div className="box mb-[98px] flex items-center justify-between w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
+<div className="text">
+<h3 className="text-[32px] text-bold text-white">Responsive Web Design</h3>
+<p className="text-[16px]">Responsive web design for any device</p>
+</div>
+<div className="icon p-[12px] bg-[#000] rounded-full">
+<span className="">
+<svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16"><path  fill="currentColor" d="M8.5.75a.75.75 0 0 0-1.5 0v5.19L4.391 3.33a.75.75 0 1 0-1.06 1.061L5.939 7H.75a.75.75 0 0 0 0 1.5h5.19l-2.61 2.609a.75.75 0 1 0 1.061 1.06L7 9.561v5.189a.75.75 0 0 0 1.5 0V9.56l2.609 2.61a.75.75 0 1 0 1.06-1.061L9.561 8.5h5.189a.75.75 0 0 0 0-1.5H9.56l2.61-2.609a.75.75 0 0 0-1.061-1.06L8.5 5.939z"/></svg>
+</span>
+</div>
+</div>
+        </div>
+        <div className="col-span-6">
+        <div className="box flex items-center justify-between w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
+<div className="text">
+<h3 className="text-[32px] text-bold text-white">Responsive Web Design</h3>
+<p className="text-[16px]">Responsive web design for any device</p>
+</div>
+<div className="icon p-[12px] bg-[#000] rounded-full">
+<span className="">
+<svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16"><path  fill="currentColor" d="M8.5.75a.75.75 0 0 0-1.5 0v5.19L4.391 3.33a.75.75 0 1 0-1.06 1.061L5.939 7H.75a.75.75 0 0 0 0 1.5h5.19l-2.61 2.609a.75.75 0 1 0 1.061 1.06L7 9.561v5.189a.75.75 0 0 0 1.5 0V9.56l2.609 2.61a.75.75 0 1 0 1.06-1.061L9.561 8.5h5.189a.75.75 0 0 0 0-1.5H9.56l2.61-2.609a.75.75 0 0 0-1.061-1.06L8.5 5.939z"/></svg>
+</span>
+</div>
+</div>
+        </div>
+        <div className="col-span-6 ml-auto">
+        <div className="box flex items-center justify-between w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
+<div className="text">
+<h3 className="text-[32px] text-bold text-white">Responsive Web Design</h3>
+<p className="text-[16px]">Responsive web design for any device</p>
+</div>
+<div className="icon p-[12px] bg-[#000] rounded-full">
+<span className="">
+<svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16"><path  fill="currentColor" d="M8.5.75a.75.75 0 0 0-1.5 0v5.19L4.391 3.33a.75.75 0 1 0-1.06 1.061L5.939 7H.75a.75.75 0 0 0 0 1.5h5.19l-2.61 2.609a.75.75 0 1 0 1.061 1.06L7 9.561v5.189a.75.75 0 0 0 1.5 0V9.56l2.609 2.61a.75.75 0 1 0 1.06-1.061L9.561 8.5h5.189a.75.75 0 0 0 0-1.5H9.56l2.61-2.609a.75.75 0 0 0-1.061-1.06L8.5 5.939z"/></svg>
+</span>
+</div>
+</div>
+        </div>
+
       </div>
+    </div>
+  </div>
       {/* service end  */}
       {/* skill start  */}
       <div id="skill"></div>

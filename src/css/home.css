@@ -1,0 +1,261 @@
+
+
+body{
+  background: var(--bg);
+  color: white;
+}
+
+ul, li, button, a, p{
+  font-family: "Poppins";
+}
+
+ul li:hover{
+  color: var(--neon);
+}
+.rotate-45 {
+  transform: rotate(270deg);
+}
+nav{
+  position: relative;
+  z-index: 999;
+}
+
+
+.container{
+  width: 1280px;
+  margin: 0 auto;
+}
+#logo{
+  font-family: "Lexend", ;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--bg);
+  text-shadow: 
+  1px 0 0 #C9F31D,
+  -1px 0 0 #C9F31D,
+  0 1px 0 #C9F31D,
+  0 -1px 0 #C9F31D,
+  1px 1px #C9F31D,
+  -1px -1px 0 #C9F31D,
+  1px -1px 0 #C9F31D,
+  -1px 1px 0 #C9F31D;
+}
+
+#banner{
+  position: relative;
+}
+
+#button span svg path{
+  fill: var(--bg);
+}
+
+
+#button:hover span {
+  background: #000;
+  fill: #C9F31D;
+}
+#button:hover svg path{
+  fill: #C9F31D;
+}
+#button{
+  cursor: pointer;
+}
+#name{
+  font-family: "Lexend", ;
+  color: var(--bg);
+  line-height: auto;
+  text-shadow: 
+  1px 0 0 #ffff,
+  -1px 0 0 #ffff,
+  0 1px 0 #ffff,
+  0 -1px 0 #ffff,
+  1px 1px #ffff,
+  -1px -1px 0 #ffff,
+  1px -1px 0 #ffff,
+  -1px 1px 0 #ffff;
+  animation: glitch 2s ;
+}
+.shapePurple{
+  width: 152px;
+  border-radius: 100%;
+  height: 152px;
+  background: var(--purple);
+  box-shadow: var(--shapeBoxShadow);
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: -1;
+  animation: placeChange 10s infinite linear;
+}
+.shapeBlue{
+  width: 152px;
+  border-radius: 100%;
+  height: 152px;
+  background: var(--blue);
+  box-shadow: var(--shapeBoxBlue);
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  z-index: -1;
+  animation: placeChange 5s infinite linear;
+}
+.marquee{
+  font-family: "Lexend", ;
+  font-size: 48px;
+  font-weight: 700;
+  background: var(--neon);
+  padding: 40px 0px;
+  display: flex;
+  
+  
+}
+
+.marquee h2,h3,h4{
+  display: inline-block;
+  font-size: 72px;
+  font-weight: 700;
+  font-family: "Lexend", ;
+  color: var(--bg);
+  margin: 0 64px; 
+}
+.marquee span svg{
+  display: inline-block;
+  color: var(--bg);
+  margin-bottom: 20px;
+}
+.marquee h3{
+  color: var(--neon);
+  text-shadow: 
+  1px 0 0 var(--bg),
+  -1px 0 0 var(--bg),
+  0 1px 0 var(--bg),
+  0 -1px 0 var(--bg),
+  1px 1px var(--bg),
+  -1px -1px 0 var(--bg),
+  1px -1px 0 var(--bg),
+  -1px 1px 0 var(--bg);
+}
+.about .aboutImg{
+  position: relative;
+}
+
+.about .aboutImg:hover .p1{
+  border: 2px solid var(--neon);
+}
+.about .aboutImg:hover .p2{
+  border: 2px solid var(--neon);
+}
+
+.about .aboutImg .p1, .p2{
+  position: absolute;
+  top: 40%;
+  left: -20%;
+  color: var(--bg);
+  border: 2px solid white;
+}
+.about .aboutImg .p2{
+  position: absolute;
+  top: 65%;
+  left: -30%;
+  color: var(--bg);
+}
+
+.about .aboutImg:hover {
+  box-shadow: 
+
+    0 0 60px var(--neon),
+    0 0 70px var(--neon);
+    
+}
+
+.about .aboutImg .aboutShape{
+  position: absolute;
+  top: -5%;
+  left: -40%;
+  animation: rotation 20s infinite linear;
+
+}
+
+.service h3{
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+
+}
+
+.service .box {
+  border: 1px solid var(--bg) ;
+  cursor: pointer ;
+}
+
+.service  .box:hover {
+  border: 1px solid var(--neon);
+}
+
+.service  .box span svg path{
+  fill: white;
+}
+.service  .box:hover span svg path{
+  fill: var(--neon);
+}
+
+.service{
+  position: relative;
+  background: url(../assets/lines.png);
+}
+.service .lines{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.seriveShape{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
+}
+
+
+@keyframes glitch {
+  50% {
+    filter: blur(20px);
+    transform: skew(25deg);
+  }
+}
+@keyframes rotation{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes placeChange{
+  0%{
+    transform: translateX(0%);
+  }
+  50%{
+    transform: translateX(50%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+
+}
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(1.1);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
