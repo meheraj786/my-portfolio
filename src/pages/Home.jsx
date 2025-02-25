@@ -788,7 +788,7 @@ function Home() {
       <div className="container">
         <div className="title text-center">
           <p>News & Blog</p>
-          <h2 className="text-[32px] mt-[30px] mb-[76px] h2 font-bold">Latest News & <span className="text-[#C9F31D] ">Blog</span></h2>
+          <h2 className="text-[42px] mt-[30px] mb-[76px] h2 font-bold">Latest News & <span className="text-[#C9F31D] ">Blog</span></h2>
         </div>
         <div className="grid mb-[30px] cards lg:grid-cols-12">
           <div className="card mb-[30px] lg:col-span-6 col-span-12 mx-auto">
