@@ -346,6 +346,22 @@ nav{
   justify-content: center;
   cursor: pointer;
 }
+.projects {
+  position: relative;
+}
+.projects .glow-line{
+  height: 1665px;
+  width: 5px;
+  background: rgba(200, 243, 29, 0.11);
+  box-shadow: 0 0 200px 200px rgba(200, 243, 29, 0.11);
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  animation: scale2 2s infinite linear;
+  z-index: -1;
+
+}
+
 
 
 
@@ -372,6 +388,17 @@ nav{
   }
   100%{
     box-shadow: 0 0 100px 100px rgba(200, 243, 29, 0.11);
+  }
+}
+@keyframes scale2{
+  0%{
+    box-shadow: 0 0 150px 150px rgba(200, 243, 29, 0.11);
+  }
+  50%{
+    box-shadow: 0 0 200px 200px rgba(200, 243, 29, 0.11);
+  }
+  100%{
+    box-shadow: 0 0 150px 150px rgba(200, 243, 29, 0.11);
   }
 }
 @keyframes placeChange{

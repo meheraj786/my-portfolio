@@ -772,6 +772,7 @@ function Home() {
                     />
                   </svg></span></h5>
         </div>
+        <div className="glow-line"></div>
       </div>
       {/* projects end  */}
       {/* blog start  */}
