@@ -2,6 +2,7 @@ import React from "react";
 import bannerShape from "../assets/Group 31.png";
 import "../css/home.css";
 import projectImg from "../assets/Digital Agency.png"
+import blogImg from "../assets/blogImg.jpg"
 
 function Home() {
   return (
@@ -787,11 +788,13 @@ function Home() {
       <div className="container">
         <div className="title text-center">
           <p>News & Blog</p>
-          <h2 className="text-[32px] mt-[30px] mb-[76px] text-bold">Latest News & <span className="text-[#C9F31D] ">Blog</span></h2>
+          <h2 className="text-[32px] mt-[30px] mb-[76px] h2 font-bold">Latest News & <span className="text-[#C9F31D] ">Blog</span></h2>
         </div>
         <div className="grid mb-[30px] cards lg:grid-cols-12">
           <div className="card mb-[30px] lg:col-span-6 col-span-12 mx-auto">
-            <div className="img mr-[10px]"></div>
+            <div className="img mr-[10px]">
+              <img className="w-full h-full" src={blogImg} alt="" />
+            </div>
             <div className="description">
               <p>31 February 2025</p>
               <h5 className=" mt-[3px] mb-[6px] font-bold">Beginner Guide of tech industry</h5>
@@ -817,7 +820,9 @@ function Home() {
 
           </div>
           <div className="card lg:col-span-6 col-span-12 mx-auto">
-            <div className="img mr-[10px]"></div>
+            <div className="img mr-[10px]">
+            <img className="w-full h-full" src={blogImg} alt="" />
+            </div>
             <div className="description">
               <p>31 February 2025</p>
               <h5 className=" mt-[3px] mb-[6px] font-bold">Beginner Guide of tech industry</h5>
@@ -843,7 +848,9 @@ function Home() {
 
           </div>
           <div className="card lg:col-span-6 col-span-12 mx-auto">
-            <div className="img mr-[10px]"></div>
+            <div className="img mr-[10px]">
+            <img className="w-full h-full" src={blogImg} alt="" />
+            </div>
             <div className="description">
               <p>31 February 2025</p>
               <h5 className=" mt-[3px] mb-[6px] font-bold">Beginner Guide of tech industry</h5>
@@ -869,7 +876,9 @@ function Home() {
 
           </div>
           <div className="card lg:col-span-6 col-span-12 mx-auto">
-            <div className="img mr-[10px]"></div>
+            <div className="img mr-[10px]">
+            <img className="w-full h-full" src={blogImg} alt="" />
+            </div>
             <div className="description">
               <p>31 February 2025</p>
               <h5 className=" mt-[3px] mb-[6px] font-bold">Beginner Guide of tech industry</h5>
