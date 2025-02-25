@@ -1,6 +1,7 @@
 import React from "react";
 import bannerShape from "../assets/Group 31.png";
 import "../css/home.css";
+import projectImg from "../assets/Digital Agency.png"
 
 function Home() {
   return (
@@ -685,7 +686,9 @@ function Home() {
             </h2>
           </div>
           <div className="project mb-[60px] flex justify-between items-center">
-            <div className="img"></div>
+            <div className="img">
+              <img src={projectImg} alt="" />
+            </div>
             <div className="description">
               <p className='text-[#C9F31D]' >Website Design</p>
               <h3 className=" ">A Simple Website Design with Figma</h3>{" "}
@@ -710,7 +713,9 @@ function Home() {
             </div>
           </div>
           <div className="project flex-row-reverse flex justify-between items-center">
-            <div className="img"></div>
+            <div className="img">
+            <img src={projectImg} alt="" />
+            </div>
             <div className="description">
               <p className='text-[#C9F31D]' >Website Design</p>
               <h3 className=" ">A Simple Website Design with Figma</h3>{" "}
@@ -735,7 +740,9 @@ function Home() {
             </div>
           </div>
           <div className="project mt-[60px] flex justify-between items-center">
-            <div className="img"></div>
+            <div className="img">
+            <img src={projectImg} alt="" />
+            </div>
             <div className="description">
               <p className='text-[#C9F31D]' >Website Design</p>
               <h3 className=" ">A Simple Website Design with Figma</h3>{" "}

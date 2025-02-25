@@ -361,7 +361,9 @@ nav{
   z-index: -1;
 
 }
-
+.projects .img{
+overflow-y: scroll;
+}
 
 
 
