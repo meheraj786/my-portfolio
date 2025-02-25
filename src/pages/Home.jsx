@@ -567,7 +567,12 @@ function Home() {
       {/* skill end  */}
       {/* projects start  */}
       <div className="projects">
-        
+        <div className="container">
+          <div className="projects-title">
+            <p>Latest Works</p>
+            <h2>Explore My Popular <span className="text-[#C9F31D]">Projects</span></h2>
+          </div>
+        </div>
       </div>
       {/* projects end  */}
       {/* blog start  */}
