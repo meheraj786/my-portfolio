@@ -11,10 +11,25 @@ function Footer() {
             <Logo/>
           </div>
           <div className="col-span-4 mx-auto">
-            wolrd
+            <h6>Quick Links</h6>
+            <ul>
+              <li>Service</li>
+              <li>Projects</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+            <div className="input">
+            <input type="text" />
+            <button>Sign Up</button>
+            </div>
           </div>
           <div className="col-span-4 mx-auto">
-            go
+            <h5>Address</h5>
+            <ul>
+              <li>Mohammadpur, Dhaka, Bangladesh</li>
+              <li>meherajhosen786@gmail.com</li>
+              <li>+880 1989162543</li>
+            </ul>
           </div>
         </div>
 
