@@ -426,6 +426,15 @@ overflow: hidden;
 
 
 
+
+
+
+.footer{
+  background: url(../assets/lines.png);
+}
+
+
+
 @keyframes glitch {
   50% {
     filter: blur(10px);

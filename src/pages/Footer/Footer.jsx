@@ -12,7 +12,7 @@ function Footer() {
           </div>
           <div className="col-span-4 mx-auto">
             <h6>Quick Links</h6>
-            <ul>
+            <ul className='flex justify-between mt-[38px] mb-[65px]'>
               <li>Service</li>
               <li>Projects</li>
               <li>Blog</li>
@@ -24,10 +24,10 @@ function Footer() {
             </div>
           </div>
           <div className="col-span-4 mx-auto">
-            <h5>Address</h5>
+            <h5 className='mb-[38px]'>Address</h5>
             <ul>
               <li>Mohammadpur, Dhaka, Bangladesh</li>
-              <li>meherajhosen786@gmail.com</li>
+              <li className='my-[15px]'>meherajhosen786@gmail.com</li>
               <li>+880 1989162543</li>
             </ul>
           </div>
