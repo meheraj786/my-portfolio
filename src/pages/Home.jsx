@@ -4,6 +4,8 @@ import "../css/home.css";
 import projectImg from "../assets/Digital Agency.png"
 import blogImg from "../assets/blogImg.jpg"
 
+import TypingEffect from '../components/TypingEffect';
+
 function Home() {
   return (
     <>
@@ -23,28 +25,20 @@ function Home() {
               </h1>
               <p className="text-[32px] font-medium">
                 I’m a{" "}
-                <span className="text-[#C9F31D]">MERN Stack Developer</span>
+                <span className="text-[#C9F31D]">
+              <TypingEffect />
+            </span>
               </p>
               <p className="w-[450px] mt-[27px] mb-[63px]">
                 A passionate web developer based from Bangladesh.With a keen eye
                 for detail and a passion for web design, I specialize in
                 creating visually captivating and highlyfunctional websites
               </p>
-              <button id="button" className="flex items-center text-[20px]">
+              <button className="button flex items-center text-[20px]">
                 Download CV{" "}
                 <span className="p-[8px] ml-[8px] rounded-full bg-[#C9F31D]">
-                  <svg
-                    className="rotate-45"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 15 15"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                    />
-                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><g fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="20" stroke-dashoffset="20" d="M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5"><animate attributeName="d" begin="0.5s" dur="1.5s" repeatCount="indefinite" values="M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5;M12 4h2v3h2.5l-4.5 4.5M12 4h-2v3h-2.5l4.5 4.5;M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5"/><animate fill="freeze" attributeName="fill-opacity" begin="0.7s" dur="0.5s" values="0;1"/><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="20;0"/></path><path stroke-dasharray="14" stroke-dashoffset="14" d="M6 19h12"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.2s" values="14;0"/></path></g></svg>
+
                 </span>
               </button>
             </div>

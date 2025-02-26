@@ -35,6 +35,22 @@ nav{
   z-index: 999;
 }
 
+nav span svg path{
+  fill: var(--bg);
+}
+
+
+nav button:hover span {
+  background: #000;
+  fill: #C9F31D;
+}
+nav button svg path{
+  fill: var(--bg);
+}
+nav button:hover svg path{
+  fill: var(--neon);
+}
+
 
 .container{
   width: 1280px;
@@ -56,25 +72,32 @@ nav{
   -1px 1px 0 #C9F31D;
 }
 
-#banner{
+button{
+  cursor: pointer;
+}
+
+.banner{
   position: relative;
 }
 
-#button span svg path{
+.banner .button span svg path{
   fill: var(--bg);
 }
 
 
-#button:hover span {
+.banner .button:hover span {
   background: #000;
   fill: #C9F31D;
 }
-#button:hover svg path{
-  fill: #C9F31D;
+.banner .button svg path{
+  fill: var(--bg);
+  stroke: var(--bg);
 }
-#button{
-  cursor: pointer;
+.banner .button:hover svg path{
+  fill: var(--neon);
+  stroke: var(--neon);
 }
+
 #name{
   font-family: "Lexend", ;
   color: var(--bg);
