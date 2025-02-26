@@ -352,6 +352,22 @@ button{
   height: 60px;
 }
 
+.skill span svg path{
+  fill: var(--bg);
+}
+
+
+.skill button:hover span {
+  background: #000;
+  fill: #C9F31D;
+}
+.skill button svg path{
+  fill: var(--bg);
+}
+.skill button:hover svg path{
+  fill: var(--neon);
+}
+
 .project h2{
   font-size: 48px;
   font-weight: 700;
