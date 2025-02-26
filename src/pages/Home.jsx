@@ -909,11 +909,19 @@ function Home() {
       </div>
       {/* blog end  */}
       {/* contact start  */}
-      <div id="contact"></div>
+      <div className="contact py-[122px]">
+        <div className="container">
+          <div className="grid grid-cols-12">
+            <div className="col-span-4">
+              hello
+            </div>
+            <div className="col-span-7 ml-auto">
+              world
+            </div>
+          </div>
+        </div>
+      </div>
       {/* contact end  */}
-      {/* footer start  */}
-      <div id="footer"></div>
-      {/* footer end  */}
     </>
   );
 }

@@ -10,12 +10,12 @@ function Header() {
         <Logo/>
         <div className="navlist mx-auto">
           <ul className='flex items-center'>
-            <li className='mx-[17px]'><NavLink to="/">Home</NavLink></li>
-            <li className='mx-[17px]'><NavLink to="about">About</NavLink></li>
-            <li className='mx-[17px]'><NavLink to="#service">Services</NavLink></li>
-            <li className='mx-[17px]'><NavLink to="skill">Skill</NavLink></li>
-            <li className='mx-[17px]'><NavLink to="projects">Projects</NavLink></li>
-            <li className='mx-[17px]'><NavLink to="contact">Contact</NavLink></li>
+            <li className='mx-[17px]'><NavLink className={({isActive})=>`${isActive ? " text-[#C9F31D]": "text-white "}`} to="/">Home</NavLink></li>
+            <li className='mx-[17px]'><NavLink className={({isActive})=>`${isActive ? " text-[#C9F31D]": "text-white "}`} to="about">About</NavLink></li>
+            <li className='mx-[17px]'><NavLink className={({isActive})=>`${isActive ? " text-[#C9F31D]": "text-white "}`} to="service">Services</NavLink></li>
+            <li className='mx-[17px]'><NavLink className={({isActive})=>`${isActive ? " text-[#C9F31D]": "text-white "}`} to="skill">Skill</NavLink></li>
+            <li className='mx-[17px]'><NavLink className={({isActive})=>`${isActive ? " text-[#C9F31D]": "text-white "}`} to="projects">Projects</NavLink></li>
+            <li className='mx-[17px]'><NavLink className={({isActive})=>`${isActive ? " text-[#C9F31D]": "text-white "}`} to="contact">Contact</NavLink></li>
           </ul>
         </div>
         <div className="right">
