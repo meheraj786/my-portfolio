@@ -785,6 +785,7 @@ function Home() {
       {/* projects end  */}
       {/* blog start  */}
       <div className="blog py-[107px]">
+        <div className="blogshape"></div>
       <div className="container">
         <div className="title text-center">
           <p>News & Blog</p>
@@ -884,7 +885,7 @@ function Home() {
               <h5 className=" mt-[3px] mb-[6px] font-bold">Beginner Guide of tech industry</h5>
               <button id="button" className="flex items-center text-[20px]">
                 Learn More{" "}
-                <span className="p-[8px] ml-[8px] rounded-full bg-[#C9F31D]">
+                <span className="p-[8px] ml-[8px] rounded-full ">
                   <svg
                     className="rotate-45"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1002,7 +1003,7 @@ laudantium, totam rem aperiamc</p>
                 </div>
                 <div className="col-span-12 flex flex-col ml-auto">
                 <label htmlFor="name">Text Area</label>
-                <input type="text" className="textArea mb-[30px] mt-[11px] rounded-[20px] bg-black pt-[22px] pr-[525px] pb-[145px] pl-[25px]" placeholder="Type Your Message Here"  />
+                <input type="text" className="textArea mb-[30px] mt-[11px] rounded-[20px] bg-black pt-[22px] pr-[540px] pb-[145px] pl-[25px]" placeholder="Type Your Message Here"  />
                 </div>
               </div>
               <div className="button flex flex-center">
