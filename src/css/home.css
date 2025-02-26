@@ -21,7 +21,7 @@ body{
 }
 
 ul, li, button, a, p{
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 ul li:hover{
