@@ -912,11 +912,11 @@ function Home() {
       <div className="contact py-[122px]">
         <div className="container">
           <div className="grid grid-cols-12">
-            <div className="col-span-4">
+            <div className="col-span-4 flex flex-col justify-center">
               <p>Get in Touch</p>
               <h3>Let’s Talk For your
-              Next Projects</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus to
+              <span className="text-[#C9F31D] block ">Next Projects</span></h3>
+              <p className="w-[349px]">Sed ut perspiciatis unde omnis iste natus to
 voluptatem accusantium doloremque
 laudantium, totam rem aperiamc</p>
 <ul>
@@ -984,21 +984,47 @@ laudantium, totam rem aperiamc</p>
             </div>
             <div className="col-span-7 ml-auto">
               <div className="grid grid-cols-12">
-                <div className="col-span-6  ml-auto">
-                  hello 
+                <div className="col-span-6 mr-[38px] flex flex-col ml-auto">
+                  <label htmlFor="name">Full Name</label>
+                  <input className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]" placeholder="Enter Your Name" type="text"  />
                 </div>
-                <div className="col-span-6  ml-auto">
-                world
+                <div className="col-span-6 flex flex-col ml-auto">
+                <label htmlFor="email" type="email">Email Address</label>
+                  <input className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]" placeholder="Enter Your Name" type="text"  />
                 </div>
-                <div className="col-span-12  ml-auto">
-                  universe
+                <div className="col-span-6 mr-[38px] flex flex-col ml-auto">
+                <label htmlFor="name">Phone Number</label>
+                <input className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]" placeholder="Enter Your Name" type="number"  />
                 </div>
-                
-
+                <div className="col-span-6 flex flex-col ml-auto">
+                <label htmlFor="name">Subject</label>
+                <input className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]" placeholder="Enter Your Name" type="text"  />
+                </div>
+                <div className="col-span-12 flex flex-col ml-auto">
+                <label htmlFor="name">Text Area</label>
+                <input type="text" className="textArea mb-[30px] mt-[11px] rounded-[20px] bg-black pt-[22px] pr-[525px] pb-[145px] pl-[25px]" placeholder="Type Your Message Here"  />
+                </div>
               </div>
-              <button className=" ml-auto">Send Message</button>
+              <div className="button flex flex-center">
+              <button className=" flex items-center mt-[68px] bg-[#C9F31D] rounded-[20px] p-[20px] text-[#131313]">Send Message <span className="ml-[10px]">
+                <svg
+                    className="rotate-45"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 15 15"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                    />
+                  </svg></span></button>
+              </div>
             </div>
           </div>
+        </div>
+        <div className="glowShape">
+          
         </div>
       </div>
       {/* contact end  */}

@@ -424,13 +424,49 @@ overflow: hidden;
   transition: .5s ease-in-out;
 }
 
+.contact h3{
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Lexend";
+  color: white;
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.contact ul{
+  margin-top: 57px;
+}
+.contact ul li{
+  margin: 10px 0;
+}
+.glowShape{
+  width: 1064px;
+  height: 5px;
+  background: rgba(200, 243, 29, 0.11);
+  box-shadow: 0 0 100px 100px rgba(200, 243, 29, 0.11);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
 
+.contact {
+  background: url(../assets/contactbg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
 
 
 
 
 .footer{
-  background: url(../assets/lines.png);
+  background: url(../assets/footerbg.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: 2;
 }
 
 
