@@ -222,7 +222,7 @@ nav{
 
 .service{
   position: relative;
-  background: url(../assets/lines.png);
+  background: url(../assets/servicebg.png);
 }
 .service .lines{
   position: absolute;
@@ -240,7 +240,7 @@ nav{
 
 
 .skill{
-  background: url(../assets/line.png);
+  background: url(../assets/skillbg.png);
   background-repeat: repeat-x;
   position: relative;
 }
@@ -466,7 +466,6 @@ overflow: hidden;
   position: relative;
   background-repeat: no-repeat;
   background-position: bottom;
-  z-index: 2;
 }
 
 
