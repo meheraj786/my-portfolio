@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import bannerShape from "../assets/Group 31.png";
 import "../css/home.css";
 import projectImg from "../assets/Digital Agency.png"
@@ -7,6 +7,28 @@ import blogImg from "../assets/blogImg.jpg"
 import TypingEffect from '../components/TypingEffect';
 
 function Home() {
+  useEffect(() => {
+    const follower = document.createElement('div');
+    follower.className = 'mouse-follower';
+    document.body.appendChild(follower);
+
+    const outerCircle = document.createElement('div');
+    outerCircle.className = 'outer-circle';
+    document.body.appendChild(outerCircle);
+
+    const moveFollower = (e) => {
+      follower.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+      outerCircle.style.transform = `translate(${e.clientX - 10}px, ${e.clientY - 10}px)`;
+    };
+
+    window.addEventListener('mousemove', moveFollower);
+
+    return () => {
+      window.removeEventListener('mousemove', moveFollower);
+      document.body.removeChild(follower);
+      document.body.removeChild(outerCircle);
+    };
+  }, []);
   return (
     <>
       {/* banner start  */}
