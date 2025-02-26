@@ -428,8 +428,12 @@ overflow: hidden;
 
 @keyframes glitch {
   50% {
-    filter: blur(20px);
-    transform: skew(25deg);
+    filter: blur(10px);
+    transform: skew(5deg);
+  }
+  100% {
+    filter: blur(0px);
+    transform: skew(0deg);
   }
 }
 @keyframes rotation{
