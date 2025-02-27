@@ -487,7 +487,7 @@ function Home() {
               </div>
             </div>
             <div className="lg:col-span-6 col-span-12 lg:ml-auto">
-              <div className="box mb-[98px] flex items-center justify-between max-w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
+              <div className="box mb-[98px] flex items-center justify-between max-w-[576px] lg:w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
                 <div className="text">
                   <h3 className="text-[32px] text-bold text-white">
                   React Development
@@ -540,8 +540,8 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-6 col-span-12 lg:ml-auto">
-              <div className="box flex items-center justify-between max-w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
+            <div className="lg:col-span-6 col-span-12 lg:ml-auto ">
+              <div className="box flex items-center justify-between lg:w-[576px] max-w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
                 <div className="text">
                   <h3 className="text-[32px] text-bold text-white">
                   Modern DataBase
@@ -911,7 +911,7 @@ function Home() {
             </h2>
           </div>
           <div className="grid mb-[30px] cards lg:grid-cols-12">
-            <div className="card mb-[30px] lg:col-span-6 col-span-12 mx-auto">
+            <div className="card mb-3 lg:mb-[30px] lg:col-span-6 col-span-12 mx-auto">
               <div className="img mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
@@ -939,7 +939,7 @@ function Home() {
                 </button>
               </div>
             </div>
-            <div className="card lg:col-span-6 col-span-12 mx-auto">
+            <div className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
               <div className="img mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
@@ -967,7 +967,7 @@ function Home() {
                 </button>
               </div>
             </div>
-            <div className="card lg:col-span-6 col-span-12 mx-auto">
+            <div className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
               <div className="img mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
@@ -995,7 +995,7 @@ function Home() {
                 </button>
               </div>
             </div>
-            <div className="card lg:col-span-6 col-span-12 mx-auto">
+            <div className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
               <div className="img mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
@@ -1031,7 +1031,7 @@ function Home() {
       <div className="contact py-[122px]">
         <div className="container">
           <div className="grid grid-cols-12">
-            <div className="col-span-4 flex flex-col justify-center">
+            <div className="lg:col-span-4 col-span-12 flex flex-col justify-center">
               <p>Get in Touch</p>
               <h3>
                 Let’s Talk For your
@@ -1108,35 +1108,35 @@ function Home() {
                 </li>
               </ul>
             </div>
-            <div className="col-span-7 ml-auto">
+            <div className="lg:col-span-7 col-span-12 lg:ml-auto">
               <div className="grid grid-cols-12">
-                <div className="col-span-6 mr-[38px] flex flex-col ml-auto">
+                <div className="lg:col-span-6 col-span-12 lg:mr-[38px] flex flex-col lg:ml-auto">
                   <label htmlFor="name">Full Name</label>
                   <input
-                    className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
+                    className="p-[22px] lg:w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
                     placeholder="Enter Your Name"
                     type="text"
                   />
                 </div>
-                <div className="col-span-6 flex flex-col ml-auto">
+                <div className="lg:col-span-6 col-span-12 flex flex-col lg:ml-auto">
                   <label htmlFor="email" type="email">
                     Email Address
                   </label>
                   <input
-                    className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
+                    className="p-[22px] lg:w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
                     placeholder="Enter Your Name"
                     type="text"
                   />
                 </div>
-                <div className="col-span-6 mr-[38px] flex flex-col ml-auto">
+                <div className="lg:col-span-6 col-span-12 lg:mr-[38px] flex flex-col lg:ml-auto">
                   <label htmlFor="name">Phone Number</label>
                   <input
-                    className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
+                    className="p-[22px] lg:w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
                     placeholder="Enter Your Name"
                     type="number"
                   />
                 </div>
-                <div className="col-span-6 flex flex-col ml-auto">
+                <div className="lg:col-span-6 col-span-12 flex flex-col lg:ml-auto">
                   <label htmlFor="name">Subject</label>
                   <input
                     className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
@@ -1144,11 +1144,11 @@ function Home() {
                     type="text"
                   />
                 </div>
-                <div className="col-span-12 flex flex-col ml-auto">
+                <div className="col-span-12 flex flex-col lg:ml-auto">
                   <label htmlFor="name">Text Area</label>
                   <input
                     type="text"
-                    className="textArea mb-[30px] mt-[11px] rounded-[20px] bg-black pt-[22px] pr-[540px] pb-[145px] pl-[25px]"
+                    className="textArea mb-[30px] mt-[11px] rounded-[20px] bg-black pt-[22px] lg:pr-[540px] pb-[145px] pl-[25px]"
                     placeholder="Type Your Message Here"
                   />
                 </div>
