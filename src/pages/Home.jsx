@@ -322,7 +322,7 @@ function Home() {
           <div className="grid grid-cols-12 bg-black px-[71px] py-[91px] rounded-[10px]">
             <div className="lg:col-span-6 col-span-12">
               <p>About Me</p>
-              <h2 className="w-[515px] text-[32px] font-bold">
+              <h2 className="max-w-[515px] text-[32px] font-bold">
                 Professional_
                 <span className="text-[#C9F31D] inline-block">
                   Problem Solutions
