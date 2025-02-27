@@ -120,7 +120,7 @@ function Home() {
                 </span>
               </button>
             </div>
-            <div className="col-span-12 lg:col-span-7 flex items-center justify-end">
+            <div className="col-span-12 lg:col-span-7 flex items-center lg:justify-end">
               <img src={bannerShape} />
             </div>
           </div>
@@ -272,8 +272,47 @@ function Home() {
             </svg>
           </span>
           <h2>Web Developer</h2>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="77"
+              height="77"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                d="M8.5.75a.75.75 0 0 0-1.5 0v5.19L4.391 3.33a.75.75 0 1 0-1.06 1.061L5.939 7H.75a.75.75 0 0 0 0 1.5h5.19l-2.61 2.609a.75.75 0 1 0 1.061 1.06L7 9.561v5.189a.75.75 0 0 0 1.5 0V9.56l2.609 2.61a.75.75 0 1 0 1.06-1.061L9.561 8.5h5.189a.75.75 0 0 0 0-1.5H9.56l2.61-2.609a.75.75 0 0 0-1.061-1.06L8.5 5.939z"
+              />
+            </svg>
+          </span>
           <h3>Designer</h3>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="77"
+              height="77"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                d="M8.5.75a.75.75 0 0 0-1.5 0v5.19L4.391 3.33a.75.75 0 1 0-1.06 1.061L5.939 7H.75a.75.75 0 0 0 0 1.5h5.19l-2.61 2.609a.75.75 0 1 0 1.061 1.06L7 9.561v5.189a.75.75 0 0 0 1.5 0V9.56l2.609 2.61a.75.75 0 1 0 1.06-1.061L9.561 8.5h5.189a.75.75 0 0 0 0-1.5H9.56l2.61-2.609a.75.75 0 0 0-1.061-1.06L8.5 5.939z"
+              />
+            </svg>
+          </span>
           <h4>MERN Stack</h4>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="77"
+              height="77"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                d="M8.5.75a.75.75 0 0 0-1.5 0v5.19L4.391 3.33a.75.75 0 1 0-1.06 1.061L5.939 7H.75a.75.75 0 0 0 0 1.5h5.19l-2.61 2.609a.75.75 0 1 0 1.061 1.06L7 9.561v5.189a.75.75 0 0 0 1.5 0V9.56l2.609 2.61a.75.75 0 1 0 1.06-1.061L9.561 8.5h5.189a.75.75 0 0 0 0-1.5H9.56l2.61-2.609a.75.75 0 0 0-1.061-1.06L8.5 5.939z"
+              />
+            </svg>
+          </span>
         </marquee>
       </div>
       {/* marquee start */}
@@ -281,7 +320,7 @@ function Home() {
       <div className="about">
         <div className="container py-[148px]">
           <div className="grid grid-cols-12 bg-black px-[71px] py-[91px] rounded-[10px]">
-            <div className="lg:col-span-6">
+            <div className="lg:col-span-6 col-span-12">
               <p>About Me</p>
               <h2 className="w-[515px] text-[32px] font-bold">
                 Professional_
@@ -295,7 +334,7 @@ function Home() {
                 accusantium doloremque laudantium, totam rem aperiamc
               </p>
               <div className="grid grid-cols-12">
-                <div className="col-span-6">
+                <div className="lg:col-span-6 mb-[10px] lg:mb-0 col-span-12">
                   <p className="flex items-center">
                     <span className="p-[12px] bg-[#C9F31D] rounded-full mr-[13px]">
                       <svg
@@ -310,10 +349,10 @@ function Home() {
                         />
                       </svg>
                     </span>
-                    Front-end Web Design
+                    Responsive Web Dev
                   </p>
                 </div>
-                <div className="col-span-6">
+                <div className="lg:col-span-6 col-span-12">
                   <p className="flex items-center mb-[25px]">
                     <span className="p-[12px] bg-[#C9F31D] rounded-full mr-[13px]">
                       <svg
@@ -331,7 +370,7 @@ function Home() {
                     Back-end Web Dev
                   </p>
                 </div>
-                <div className="col-span-6">
+                <div className="lg:col-span-6 mb-[10px] lg:mb-0 col-span-12">
                   <p className="flex items-center">
                     <span className="p-[12px] bg-[#C9F31D] rounded-full mr-[13px]">
                       <svg
@@ -349,7 +388,7 @@ function Home() {
                     Front-end Web Design
                   </p>
                 </div>
-                <div className="col-span-6">
+                <div className="lg:col-span-6 col-span-12">
                   <p className="flex items-center">
                     <span className="p-[12px] bg-[#C9F31D] rounded-full mr-[13px]">
                       <svg
@@ -364,12 +403,12 @@ function Home() {
                         />
                       </svg>
                     </span>
-                    Back-end Web Dev
+                    DataBase Headlining
                   </p>
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-6 ">
+            <div className="lg:col-span-6 col-span-12 mt-10 lg:mt-0 lg:ml-auto mx-auto">
               <div className="w-[346px] h-[363px] aboutImg bg-amber-50 mx-auto rounded-[10px]">
                 <span className="aboutShape">
                   <svg
@@ -414,20 +453,20 @@ function Home() {
         <div className="container">
           <div className="serviceTitle mb-[40px] text-center">
             <p>Popular Services</p>
-            <h2 className="w-[600px] mx-auto font-bold text-[42px] text-center">
+            <h2 className="max-w-[600px] mx-auto font-bold text-[42px] text-center">
               My <span className="text-[#C9F31D]">Special Service</span> For
               your Business Development
             </h2>
           </div>
           <div className="grid grid-cols-12">
-            <div className="col-span-6 ">
-              <div className="box flex items-center justify-between w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
+            <div className="lg:col-span-6 col-span-12">
+              <div className="box flex items-center justify-between max-w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
                 <div className="text">
                   <h3 className="text-[32px] text-bold text-white">
-                    Responsive Web Design
+                  Responsive Web Design
                   </h3>
                   <p className="text-[16px]">
-                    Responsive web design for any device
+                  Responsive web design for any device
                   </p>
                 </div>
                 <div className="icon p-[12px] bg-[#000] rounded-full">
@@ -447,14 +486,14 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-span-6 ml-auto">
-              <div className="box mb-[98px] flex items-center justify-between w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
+            <div className="lg:col-span-6 col-span-12 lg:ml-auto">
+              <div className="box mb-[98px] flex items-center justify-between max-w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
                 <div className="text">
                   <h3 className="text-[32px] text-bold text-white">
-                    Responsive Web Design
+                  React Development
                   </h3>
                   <p className="text-[16px]">
-                    Responsive web design for any device
+                  Be a part of front end revolutionary tech like React js
                   </p>
                 </div>
                 <div className="icon p-[12px] bg-[#000] rounded-full">
@@ -474,14 +513,14 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-span-6">
-              <div className="box flex items-center justify-between w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
+            <div className="lg:col-span-6 col-span-12">
+              <div className="box flex items-center justify-between max-w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
                 <div className="text">
                   <h3 className="text-[32px] text-bold text-white">
-                    Responsive Web Design
+                  Powerful Backed dev
                   </h3>
                   <p className="text-[16px]">
-                    Responsive web design for any device
+                  unleash the power of express and node js with me
                   </p>
                 </div>
                 <div className="icon p-[12px] bg-[#000] rounded-full">
@@ -501,14 +540,14 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-span-6 ml-auto">
-              <div className="box flex items-center justify-between w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
+            <div className="lg:col-span-6 col-span-12 lg:ml-auto">
+              <div className="box flex items-center justify-between max-w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
                 <div className="text">
                   <h3 className="text-[32px] text-bold text-white">
-                    Responsive Web Design
+                  Modern DataBase
                   </h3>
                   <p className="text-[16px]">
-                    Responsive web design for any device
+                  Let’s keep your valuable data in Mongo-DB with me
                   </p>
                 </div>
                 <div className="icon p-[12px] bg-[#000] rounded-full">
@@ -537,7 +576,7 @@ function Home() {
         <div className="line"></div>
         <div className="container bg-[#131313] rounded-[20px]">
           <div className="grid grid-cols-12">
-            <div className="lg:col-span-4 flex flex-col justify-center">
+            <div className="lg:col-span-4 col-span-12 flex flex-col justify-center">
               <p>My Skill</p>
               <h2 className="text-[32px] font-bold">
                 Let’s Explore Popular{" "}
@@ -567,7 +606,7 @@ function Home() {
                 </span>
               </button>
             </div>
-            <div className="lg:col-span-8 flex flex-wrap">
+            <div className="lg:col-span-8 col-span-12 mt-10 lg:mt-0 flex flex-wrap">
               <div className="box mb-[43px] w-[161px] h-[197px] mr-[10px] rounded-[20px] flex flex-col justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -758,7 +797,7 @@ function Home() {
               <span className="text-[#C9F31D]">Projects</span>
             </h2>
           </div>
-          <div className="project mb-[60px] flex justify-between items-center">
+          <div className="project mb-[60px] lg:flex justify-between items-center">
             <div className="img">
               <img src={projectImg} alt="" />
             </div>
@@ -785,7 +824,7 @@ function Home() {
               </button>
             </div>
           </div>
-          <div className="project flex-row-reverse flex justify-between items-center">
+          <div className="project flex-row-reverse lg:flex justify-between items-center">
             <div className="img">
               <img src={projectImg} alt="" />
             </div>
@@ -812,7 +851,7 @@ function Home() {
               </button>
             </div>
           </div>
-          <div className="project mt-[60px] flex justify-between items-center">
+          <div className="project mt-[60px] lg:flex justify-between items-center">
             <div className="img">
               <img src={projectImg} alt="" />
             </div>
