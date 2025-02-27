@@ -584,6 +584,50 @@ overflow: hidden;
   background-repeat: no-repeat;
   background-position: bottom;
 }
+.footer h5{
+  font-size: 22px;
+  font-weight: 600;
+}
+.footer .input input{
+  padding-left: 30px;
+  outline: none;
+  margin-right: 8px;
+}
+.footer  svg path{
+  fill: var(--neon);
+}
+
+.footer .input button{
+  padding: 6px 11px;
+  background: var(--neon);
+  color: var(--bg);
+  border-radius: 20px;
+}
+.footer .input button:hover{
+  background:var(--bg);
+  color: var(--neon);
+}
+.footer .col-span-4 ul li{
+  display: flex;
+  align-items: center;
+  
+}
+.footer .col-span-4 ul li span {
+  margin-right: 10px;
+  
+}
+
+
+.footer .input {
+  position: relative;
+}
+.footer .input .mailIcon{
+  position: absolute;
+}
+
+.footer .input input{
+  border-bottom: 1px solid grey;
+}
 
 
 
