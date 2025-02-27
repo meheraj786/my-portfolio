@@ -481,6 +481,7 @@ overflow-y: scroll;
 }
 
 .blog .cards .card{
+
   width: 630px;
   height: 227px;
   border: 2px solid var(--bg);
@@ -720,6 +721,11 @@ overflow: hidden;
 @media(max-width: 600px){
   .aboutShape{
     display: none;
+  
+  }
+  .blog .cards .card{
+
+    width: 100%;
   
   }
 }
