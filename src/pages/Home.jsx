@@ -1108,7 +1108,7 @@ function Home() {
                 </li>
               </ul>
             </div>
-            <div className="lg:col-span-7 col-span-12 lg:ml-auto">
+            <div className="lg:col-span-7 mt-10 lg:mt-0 col-span-12 lg:ml-auto">
               <div className="grid grid-cols-12">
                 <div className="lg:col-span-6 col-span-12 lg:mr-[38px] flex flex-col lg:ml-auto">
                   <label htmlFor="name">Full Name</label>
@@ -1124,23 +1124,23 @@ function Home() {
                   </label>
                   <input
                     className="p-[22px] lg:w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
-                    placeholder="Enter Your Name"
+                    placeholder="Enter Your e-mail"
                     type="text"
                   />
                 </div>
                 <div className="lg:col-span-6 col-span-12 lg:mr-[38px] flex flex-col lg:ml-auto">
-                  <label htmlFor="name">Phone Number</label>
+                  <label htmlFor="phonenumber">Phone Number</label>
                   <input
                     className="p-[22px] lg:w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
-                    placeholder="Enter Your Name"
-                    type="number"
+                    placeholder="Enter Your Phone Number"
+                    type="phone"
                   />
                 </div>
                 <div className="lg:col-span-6 col-span-12 flex flex-col lg:ml-auto">
                   <label htmlFor="name">Subject</label>
                   <input
-                    className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
-                    placeholder="Enter Your Name"
+                    className="p-[22px] lg:w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
+                    placeholder="Enter the subject"
                     type="text"
                   />
                 </div>
