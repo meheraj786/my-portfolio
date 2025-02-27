@@ -1,30 +1,32 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import bannerShape from "../assets/Group 31.png";
 import "../css/home.css";
-import projectImg from "../assets/Digital Agency.png"
-import blogImg from "../assets/blogImg.jpg"
+import projectImg from "../assets/Digital Agency.png";
+import blogImg from "../assets/blogImg.jpg";
 
-import TypingEffect from '../components/TypingEffect';
+import TypingEffect from "../components/TypingEffect";
 
 function Home() {
   useEffect(() => {
-    const follower = document.createElement('div');
-    follower.className = 'mouse-follower';
+    const follower = document.createElement("div");
+    follower.className = "mouse-follower";
     document.body.appendChild(follower);
 
-    const outerCircle = document.createElement('div');
-    outerCircle.className = 'outer-circle';
+    const outerCircle = document.createElement("div");
+    outerCircle.className = "outer-circle";
     document.body.appendChild(outerCircle);
 
     const moveFollower = (e) => {
       follower.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-      outerCircle.style.transform = `translate(${e.clientX - 10}px, ${e.clientY - 10}px)`;
+      outerCircle.style.transform = `translate(${e.clientX - 10}px, ${
+        e.clientY - 10
+      }px)`;
     };
 
-    window.addEventListener('mousemove', moveFollower);
+    window.addEventListener("mousemove", moveFollower);
 
     return () => {
-      window.removeEventListener('mousemove', moveFollower);
+      window.removeEventListener("mousemove", moveFollower);
       document.body.removeChild(follower);
       document.body.removeChild(outerCircle);
     };
@@ -48,8 +50,8 @@ function Home() {
               <p className="text-[32px] font-medium">
                 I’m a{" "}
                 <span className="text-[#C9F31D]">
-              <TypingEffect />
-            </span>
+                  <TypingEffect />
+                </span>
               </p>
               <p className="w-[450px] mt-[27px] mb-[63px]">
                 A passionate web developer based from Bangladesh.With a keen eye
@@ -59,8 +61,62 @@ function Home() {
               <button className="button flex items-center text-[20px]">
                 Download Resume{" "}
                 <span className="p-[8px] ml-[8px] rounded-full bg-[#C9F31D]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><g fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="20" stroke-dashoffset="20" d="M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5"><animate attributeName="d" begin="0.5s" dur="1.5s" repeatCount="indefinite" values="M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5;M12 4h2v3h2.5l-4.5 4.5M12 4h-2v3h-2.5l4.5 4.5;M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5"/><animate fill="freeze" attributeName="fill-opacity" begin="0.7s" dur="0.5s" values="0;1"/><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="20;0"/></path><path stroke-dasharray="14" stroke-dashoffset="14" d="M6 19h12"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.2s" values="14;0"/></path></g></svg>
-
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        fill="currentColor"
+                        fill-opacity="0"
+                        stroke-dasharray="20"
+                        stroke-dashoffset="20"
+                        d="M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5"
+                      >
+                        <animate
+                          attributeName="d"
+                          begin="0.5s"
+                          dur="1.5s"
+                          repeatCount="indefinite"
+                          values="M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5;M12 4h2v3h2.5l-4.5 4.5M12 4h-2v3h-2.5l4.5 4.5;M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5"
+                        />
+                        <animate
+                          fill="freeze"
+                          attributeName="fill-opacity"
+                          begin="0.7s"
+                          dur="0.5s"
+                          values="0;1"
+                        />
+                        <animate
+                          fill="freeze"
+                          attributeName="stroke-dashoffset"
+                          dur="0.4s"
+                          values="20;0"
+                        />
+                      </path>
+                      <path
+                        stroke-dasharray="14"
+                        stroke-dashoffset="14"
+                        d="M6 19h12"
+                      >
+                        <animate
+                          fill="freeze"
+                          attributeName="stroke-dashoffset"
+                          begin="0.5s"
+                          dur="0.2s"
+                          values="14;0"
+                        />
+                      </path>
+                    </g>
+                  </svg>
                 </span>
               </button>
             </div>
@@ -228,10 +284,10 @@ function Home() {
             <div className="lg:col-span-6">
               <p>About Me</p>
               <h2 className="w-[515px] text-[32px] font-bold">
-                Professional 
+                Professional_
                 <span className="text-[#C9F31D] inline-block">
                   Problem Solutions
-                </span>
+                </span><br />
                 For Digital Products
               </h2>
               <p className="w-[350px] mt-[16px] mb-[35px]">
@@ -707,94 +763,100 @@ function Home() {
               <img src={projectImg} alt="" />
             </div>
             <div className="description">
-              <p className='text-[#C9F31D]' >Website Design</p>
+              <p className="text-[#C9F31D]">Website Design</p>
               <h3 className=" ">A Simple Website Design with Figma</h3>{" "}
               <p className="w-[392px] mb-[55px]">
                 Sed ut perspiciatis unde omnin natus totam remaperiam eaque
                 inventore veritatis...
               </p>
               <button>
-              <svg
-                    className="rotate-45"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 15 15"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                    />
-                  </svg>
+                <svg
+                  className="rotate-45"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 15 15"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                  />
+                </svg>
               </button>
             </div>
           </div>
           <div className="project flex-row-reverse flex justify-between items-center">
             <div className="img">
-            <img src={projectImg} alt="" />
+              <img src={projectImg} alt="" />
             </div>
             <div className="description">
-              <p className='text-[#C9F31D]' >Website Design</p>
+              <p className="text-[#C9F31D]">Website Design</p>
               <h3 className=" ">A Simple Website Design with Figma</h3>{" "}
               <p className="w-[392px] mb-[55px]">
                 Sed ut perspiciatis unde omnin natus totam remaperiam eaque
                 inventore veritatis...
               </p>
               <button>
-              <svg
-                    className="rotate-45"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 15 15"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                    />
-                  </svg>
+                <svg
+                  className="rotate-45"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 15 15"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                  />
+                </svg>
               </button>
             </div>
           </div>
           <div className="project mt-[60px] flex justify-between items-center">
             <div className="img">
-            <img src={projectImg} alt="" />
+              <img src={projectImg} alt="" />
             </div>
             <div className="description">
-              <p className='text-[#C9F31D]' >Website Design</p>
+              <p className="text-[#C9F31D]">Website Design</p>
               <h3 className=" ">A Simple Website Design with Figma</h3>{" "}
               <p className="w-[392px] mb-[55px]">
                 Sed ut perspiciatis unde omnin natus totam remaperiam eaque
                 inventore veritatis...
               </p>
               <button>
-              <svg
-                    className="rotate-45"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 15 15"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                    />
-                  </svg>
+                <svg
+                  className="rotate-45"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 15 15"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                  />
+                </svg>
               </button>
             </div>
           </div>
-          <h5 className="view-more">View More <span>              <svg
-                    className="rotate-45"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 15 15"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                    />
-                  </svg></span></h5>
+          <h5 className="view-more">
+            View More{" "}
+            <span>
+              {" "}
+              <svg
+                className="rotate-45"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 15 15"
+              >
+                <path
+                  fill="currentColor"
+                  d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                />
+              </svg>
+            </span>
+          </h5>
         </div>
         <div className="glow-line"></div>
       </div>
@@ -802,127 +864,128 @@ function Home() {
       {/* blog start  */}
       <div className="blog py-[107px]">
         <div className="blogshape"></div>
-      <div className="container">
-        <div className="title text-center">
-          <p>News & Blog</p>
-          <h2 className="text-[42px] mt-[30px] mb-[76px] h2 font-bold">Latest News & <span className="text-[#C9F31D] ">Blog</span></h2>
+        <div className="container">
+          <div className="title text-center">
+            <p>News & Blog</p>
+            <h2 className="text-[42px] mt-[30px] mb-[76px] h2 font-bold">
+              Latest News & <span className="text-[#C9F31D] ">Blog</span>
+            </h2>
+          </div>
+          <div className="grid mb-[30px] cards lg:grid-cols-12">
+            <div className="card mb-[30px] lg:col-span-6 col-span-12 mx-auto">
+              <div className="img mr-[10px]">
+                <img className="w-full h-full" src={blogImg} alt="" />
+              </div>
+              <div className="description">
+                <p>31 February 2025</p>
+                <h5 className=" mt-[3px] mb-[6px] font-bold">
+                  Beginner Guide of tech industry
+                </h5>
+                <button id="button" className="flex items-center text-[20px]">
+                  Learn More{" "}
+                  <span className="p-[8px] ml-[8px] rounded-full bg-[#C9F31D]">
+                    <svg
+                      className="rotate-45"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 15 15"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div className="card lg:col-span-6 col-span-12 mx-auto">
+              <div className="img mr-[10px]">
+                <img className="w-full h-full" src={blogImg} alt="" />
+              </div>
+              <div className="description">
+                <p>31 February 2025</p>
+                <h5 className=" mt-[3px] mb-[6px] font-bold">
+                  Beginner Guide of tech industry
+                </h5>
+                <button id="button" className="flex items-center text-[20px]">
+                  Learn More{" "}
+                  <span className="p-[8px] ml-[8px] rounded-full bg-[#C9F31D]">
+                    <svg
+                      className="rotate-45"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 15 15"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div className="card lg:col-span-6 col-span-12 mx-auto">
+              <div className="img mr-[10px]">
+                <img className="w-full h-full" src={blogImg} alt="" />
+              </div>
+              <div className="description">
+                <p>31 February 2025</p>
+                <h5 className=" mt-[3px] mb-[6px] font-bold">
+                  Beginner Guide of tech industry
+                </h5>
+                <button id="button" className="flex items-center text-[20px]">
+                  Learn More{" "}
+                  <span className="p-[8px] ml-[8px] rounded-full bg-[#C9F31D]">
+                    <svg
+                      className="rotate-45"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 15 15"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div className="card lg:col-span-6 col-span-12 mx-auto">
+              <div className="img mr-[10px]">
+                <img className="w-full h-full" src={blogImg} alt="" />
+              </div>
+              <div className="description">
+                <p>31 February 2025</p>
+                <h5 className=" mt-[3px] mb-[6px] font-bold">
+                  Beginner Guide of tech industry
+                </h5>
+                <button id="button" className="flex items-center text-[20px]">
+                  Learn More{" "}
+                  <span className="p-[8px] ml-[8px] rounded-full ">
+                    <svg
+                      className="rotate-45"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 15 15"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="grid mb-[30px] cards lg:grid-cols-12">
-          <div className="card mb-[30px] lg:col-span-6 col-span-12 mx-auto">
-            <div className="img mr-[10px]">
-              <img className="w-full h-full" src={blogImg} alt="" />
-            </div>
-            <div className="description">
-              <p>31 February 2025</p>
-              <h5 className=" mt-[3px] mb-[6px] font-bold">Beginner Guide of tech industry</h5>
-              <button id="button" className="flex items-center text-[20px]">
-                Learn More{" "}
-                <span className="p-[8px] ml-[8px] rounded-full bg-[#C9F31D]">
-                  <svg
-                    className="rotate-45"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 15 15"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                    />
-                  </svg>
-                </span>
-              </button>
-
-            </div>
-
-          </div>
-          <div className="card lg:col-span-6 col-span-12 mx-auto">
-            <div className="img mr-[10px]">
-            <img className="w-full h-full" src={blogImg} alt="" />
-            </div>
-            <div className="description">
-              <p>31 February 2025</p>
-              <h5 className=" mt-[3px] mb-[6px] font-bold">Beginner Guide of tech industry</h5>
-              <button id="button" className="flex items-center text-[20px]">
-                Learn More{" "}
-                <span className="p-[8px] ml-[8px] rounded-full bg-[#C9F31D]">
-                  <svg
-                    className="rotate-45"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 15 15"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                    />
-                  </svg>
-                </span>
-              </button>
-
-            </div>
-
-          </div>
-          <div className="card lg:col-span-6 col-span-12 mx-auto">
-            <div className="img mr-[10px]">
-            <img className="w-full h-full" src={blogImg} alt="" />
-            </div>
-            <div className="description">
-              <p>31 February 2025</p>
-              <h5 className=" mt-[3px] mb-[6px] font-bold">Beginner Guide of tech industry</h5>
-              <button id="button" className="flex items-center text-[20px]">
-                Learn More{" "}
-                <span className="p-[8px] ml-[8px] rounded-full bg-[#C9F31D]">
-                  <svg
-                    className="rotate-45"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 15 15"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                    />
-                  </svg>
-                </span>
-              </button>
-
-            </div>
-
-          </div>
-          <div className="card lg:col-span-6 col-span-12 mx-auto">
-            <div className="img mr-[10px]">
-            <img className="w-full h-full" src={blogImg} alt="" />
-            </div>
-            <div className="description">
-              <p>31 February 2025</p>
-              <h5 className=" mt-[3px] mb-[6px] font-bold">Beginner Guide of tech industry</h5>
-              <button id="button" className="flex items-center text-[20px]">
-                Learn More{" "}
-                <span className="p-[8px] ml-[8px] rounded-full ">
-                  <svg
-                    className="rotate-45"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 15 15"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                    />
-                  </svg>
-                </span>
-              </button>
-
-            </div>
-
-          </div>
-
-        </div>
-      </div>
       </div>
       {/* blog end  */}
       {/* contact start  */}
@@ -931,14 +994,17 @@ function Home() {
           <div className="grid grid-cols-12">
             <div className="col-span-4 flex flex-col justify-center">
               <p>Get in Touch</p>
-              <h3>Let’s Talk For your
-              <span className="text-[#C9F31D] block ">Next Projects</span></h3>
-              <p className="w-[349px]">Sed ut perspiciatis unde omnis iste natus to
-voluptatem accusantium doloremque
-laudantium, totam rem aperiamc</p>
-<ul>
-  <li className="flex items-center">                  
-    <span className="mr-[13px] p-[12px] bg-[#C9F31D] rounded-full">
+              <h3>
+                Let’s Talk For your
+                <span className="text-[#C9F31D] block ">Next Projects</span>
+              </h3>
+              <p className="w-[349px]">
+                Sed ut perspiciatis unde omnis iste natus to voluptatem
+                accusantium doloremque laudantium, totam rem aperiamc
+              </p>
+              <ul>
+                <li className="flex items-center">
+                  <span className="mr-[13px] p-[12px] bg-[#C9F31D] rounded-full">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25"
@@ -951,9 +1017,10 @@ laudantium, totam rem aperiamc</p>
                       />
                     </svg>
                   </span>
-                  2+ Years Experience</li>
-                  <li className="flex items-center">                  
-    <span className="mr-[13px] p-[12px] bg-[#C9F31D] rounded-full">
+                  2+ Years Experience
+                </li>
+                <li className="flex items-center">
+                  <span className="mr-[13px] p-[12px] bg-[#C9F31D] rounded-full">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25"
@@ -966,9 +1033,10 @@ laudantium, totam rem aperiamc</p>
                       />
                     </svg>
                   </span>
-                  2+ Years Experience</li>
-                  <li className="flex items-center">                  
-    <span className="mr-[13px] p-[12px] bg-[#C9F31D] rounded-full">
+                  2+ Years Experience
+                </li>
+                <li className="flex items-center">
+                  <span className="mr-[13px] p-[12px] bg-[#C9F31D] rounded-full">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25"
@@ -981,9 +1049,10 @@ laudantium, totam rem aperiamc</p>
                       />
                     </svg>
                   </span>
-                  2+ Years Experience</li>
-                  <li className="flex items-center">                  
-    <span className="mr-[13px] p-[12px] bg-[#C9F31D] rounded-full">
+                  2+ Years Experience
+                </li>
+                <li className="flex items-center">
+                  <span className="mr-[13px] p-[12px] bg-[#C9F31D] rounded-full">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25"
@@ -996,53 +1065,78 @@ laudantium, totam rem aperiamc</p>
                       />
                     </svg>
                   </span>
-                  2+ Years Experience</li>
-</ul>
+                  2+ Years Experience
+                </li>
+              </ul>
             </div>
             <div className="col-span-7 ml-auto">
               <div className="grid grid-cols-12">
                 <div className="col-span-6 mr-[38px] flex flex-col ml-auto">
                   <label htmlFor="name">Full Name</label>
-                  <input className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]" placeholder="Enter Your Name" type="text"  />
+                  <input
+                    className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
+                    placeholder="Enter Your Name"
+                    type="text"
+                  />
                 </div>
                 <div className="col-span-6 flex flex-col ml-auto">
-                <label htmlFor="email" type="email">Email Address</label>
-                  <input className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]" placeholder="Enter Your Name" type="text"  />
+                  <label htmlFor="email" type="email">
+                    Email Address
+                  </label>
+                  <input
+                    className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
+                    placeholder="Enter Your Name"
+                    type="text"
+                  />
                 </div>
                 <div className="col-span-6 mr-[38px] flex flex-col ml-auto">
-                <label htmlFor="name">Phone Number</label>
-                <input className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]" placeholder="Enter Your Name" type="number"  />
+                  <label htmlFor="name">Phone Number</label>
+                  <input
+                    className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
+                    placeholder="Enter Your Name"
+                    type="number"
+                  />
                 </div>
                 <div className="col-span-6 flex flex-col ml-auto">
-                <label htmlFor="name">Subject</label>
-                <input className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]" placeholder="Enter Your Name" type="text"  />
+                  <label htmlFor="name">Subject</label>
+                  <input
+                    className="p-[22px] w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
+                    placeholder="Enter Your Name"
+                    type="text"
+                  />
                 </div>
                 <div className="col-span-12 flex flex-col ml-auto">
-                <label htmlFor="name">Text Area</label>
-                <input type="text" className="textArea mb-[30px] mt-[11px] rounded-[20px] bg-black pt-[22px] pr-[540px] pb-[145px] pl-[25px]" placeholder="Type Your Message Here"  />
+                  <label htmlFor="name">Text Area</label>
+                  <input
+                    type="text"
+                    className="textArea mb-[30px] mt-[11px] rounded-[20px] bg-black pt-[22px] pr-[540px] pb-[145px] pl-[25px]"
+                    placeholder="Type Your Message Here"
+                  />
                 </div>
               </div>
               <div className="button flex flex-center">
-              <button className=" flex items-center mt-[68px] bg-[#C9F31D] rounded-[20px] p-[20px] text-[#131313]">Send Message <span className="ml-[10px]">
-                <svg
-                    className="rotate-45"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 15 15"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                    />
-                  </svg></span></button>
+                <button className=" flex items-center mt-[68px] bg-[#C9F31D] rounded-[20px] p-[20px] text-[#131313]">
+                  Send Message{" "}
+                  <span className="ml-[10px]">
+                    <svg
+                      className="rotate-45"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 15 15"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                      />
+                    </svg>
+                  </span>
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div className="glowShape">
-          
-        </div>
+        <div className="glowShape"></div>
       </div>
       {/* contact end  */}
     </>
