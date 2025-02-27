@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Header() {
   return (
     <>
-    <nav className='bg-[#1C1C1C] text-white py-[24px] '>
-      <div className='container flex justify-between items-center'>
+    <nav className='bg-[#1C1C1C]  left-0 text-white py-[24px] '>
+      <div className='container flex justify-between items-center text-white  '>
         <Logo/>
         <div className="navlist mx-auto">
           <ul className='flex items-center'>
