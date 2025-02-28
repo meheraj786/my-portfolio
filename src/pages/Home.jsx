@@ -901,7 +901,7 @@ function Home() {
       </div>
       {/* projects end  */}
       {/* blog start  */}
-      <div className="blog py-[107px]">
+      <div className="blog lg:py-[107px]">
         <div className="blogshape"></div>
         <div className="container">
           <div className="title text-center">
@@ -1030,14 +1030,14 @@ function Home() {
       {/* contact start  */}
       <div className="contact py-[122px]">
         <div className="container">
-          <div className="grid grid-cols-12">
-            <div className="lg:col-span-4 col-span-12 flex flex-col justify-center">
+          <div className="grid text-center grid-cols-12">
+            <div className="lg:col-span-4 col-span-12 flex flex-col items-center lg:items-start justify-center">
               <p>Get in Touch</p>
               <h3>
                 Let’s Talk For your
                 <span className="text-[#C9F31D] block ">Next Projects</span>
               </h3>
-              <p className="w-[349px]">
+              <p className="lg:w-[349px]">
                 Sed ut perspiciatis unde omnis iste natus to voluptatem
                 accusantium doloremque laudantium, totam rem aperiamc
               </p>
