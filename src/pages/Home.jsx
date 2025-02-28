@@ -576,7 +576,7 @@ function Home() {
         <div className="line"></div>
         <div className="container bg-[#131313] rounded-[20px]">
           <div className="grid grid-cols-12">
-            <div className="lg:col-span-4 col-span-12 lg:flex flex-col text-center lg:text-left justify-center">
+            <div className="lg:col-span-4 col-span-12 flex items-center  lg:items-start flex-col text-center lg:text-left justify-center">
               <p>My Skill</p>
               <h2 className="text-[32px] font-bold">
                 Let’s Explore Popular{" "}
@@ -606,8 +606,8 @@ function Home() {
                 </span>
               </button>
             </div>
-            <div className="lg:col-span-8 col-span-12 mt-10 lg:mt-0 flex flex-wrap">
-              <div className="box mb-[43px] w-[161px] h-[197px] mr-[10px] rounded-[20px] flex flex-col justify-center items-center">
+            <div className="lg:col-span-8 col-span-12 mt-10 lg:mt-0 flex justify-center flex-wrap">
+              <div className="box lg:mb-[43px] w-[161px] h-[197px] mr-[10px] rounded-[20px] flex flex-col justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="60"
@@ -792,17 +792,17 @@ function Home() {
         <div className="container">
           <div className="projects-title text-center">
             <p>Latest Works</p>
-            <h2 className="text-[42px] mt-[22px] mb-[63px] text-bold">
+            <h2 className="lg:text-[42px] text-[32px] mt-[22px] mb-[63px] text-bold">
               Explore My Popular{" "}
               <span className="text-[#C9F31D]">Projects</span>
             </h2>
           </div>
-          <div className="project mb-[60px] lg:flex justify-between items-center">
+          <div className="project mb-[60px] lg:flex justify-between text-center items-center">
             <div className="img">
               <img src={projectImg} alt="" />
             </div>
             <div className="description">
-              <p className="text-[#C9F31D]">Website Design</p>
+              <p className="text-[#C9F31D] mt-5 lg:mt-0">Website Design</p>
               <h3 className=" ">A Simple Website Design with Figma</h3>{" "}
               <p className="w-[392px] mb-[55px]">
                 Sed ut perspiciatis unde omnin natus totam remaperiam eaque
@@ -824,12 +824,12 @@ function Home() {
               </button>
             </div>
           </div>
-          <div className="project flex-row-reverse lg:flex justify-between items-center">
+          <div className="project text-center flex-row-reverse lg:flex justify-between items-center">
             <div className="img">
               <img src={projectImg} alt="" />
             </div>
             <div className="description">
-              <p className="text-[#C9F31D]">Website Design</p>
+              <p className="text-[#C9F31D] mt-5 lg:mt-0">Website Design</p>
               <h3 className=" ">A Simple Website Design with Figma</h3>{" "}
               <p className="w-[392px] mb-[55px]">
                 Sed ut perspiciatis unde omnin natus totam remaperiam eaque
@@ -851,12 +851,12 @@ function Home() {
               </button>
             </div>
           </div>
-          <div className="project mt-[60px] lg:flex justify-between items-center">
+          <div className="project text-center mt-[60px] lg:flex justify-between items-center">
             <div className="img">
               <img src={projectImg} alt="" />
             </div>
             <div className="description">
-              <p className="text-[#C9F31D]">Website Design</p>
+              <p className="text-[#C9F31D] mt-5 lg:mt-0">Website Design</p>
               <h3 className=" ">A Simple Website Design with Figma</h3>{" "}
               <p className="w-[392px] mb-[55px]">
                 Sed ut perspiciatis unde omnin natus totam remaperiam eaque

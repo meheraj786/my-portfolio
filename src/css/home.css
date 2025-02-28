@@ -402,7 +402,6 @@ button{
   margin-top: 13px;
   min-width: 500px;
   margin-bottom: 17px;
-  
 }
 .projects  .project button{
   padding: 9px;
@@ -722,6 +721,9 @@ overflow: hidden;
     display: none;
   
   }
+  .skill .container {
+    padding-left: 0px;
+}
   .service h3{
     font-size: 26px;
   }
@@ -730,4 +732,13 @@ overflow: hidden;
     width: 100%;
   
   }
+  .projects .project h3{
+    font-size: 28px;
+    font-family: "Lexend", sans-serif;
+    margin: 0;
+    margin-top: 13px;
+    width: auto
+  }.projects .project .description {
+    width: auto;
+}
 }
