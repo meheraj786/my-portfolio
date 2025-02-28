@@ -906,7 +906,7 @@ function Home() {
         <div className="container">
           <div className="title text-center">
             <p>News & Blog</p>
-            <h2 className="text-[42px] mt-[30px] mb-[76px] h2 font-bold">
+            <h2 className="lg:text-[42px] text-[32px] mt-[30px] mb-[76px] h2 font-bold">
               Latest News & <span className="text-[#C9F31D] ">Blog</span>
             </h2>
           </div>
@@ -915,7 +915,7 @@ function Home() {
               <div className="img mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
-              <div className="description">
+              <div className="description ">
                 <p>31 February 2025</p>
                 <h5 className=" mt-[3px] mb-[6px] font-bold">
                   Beginner Guide of tech industry
