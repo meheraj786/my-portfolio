@@ -15,6 +15,10 @@
   border-radius: 10px;
 }
 
+body,html{
+  overflow-x: hidden;
+}
+
 .mouse-follower {
   position: fixed;
   top: 0;
@@ -775,5 +779,33 @@ overflow: hidden;
 .blog .cards .card h5{
   font-size: 28px;
   width: 100%;
+}
+.mouse-follower {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #C9F31D;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.1s ease-out;
+  z-index: 1000;
+}
+
+.outer-circle {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #C9F31D;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.1s ease-out;
+  z-index: 999;
+  animation: outer 2s infinite;
 }
 }
