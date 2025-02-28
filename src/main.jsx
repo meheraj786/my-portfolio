@@ -9,6 +9,8 @@ import Projects from "./pages/Projects.jsx";
 import Skill from './pages/Skill.jsx'
 import Blog from './pages/Blog.jsx'
 import ReadBlog from './pages/ReadBlog.jsx'
+import Service from './pages/Service.jsx'
+import Contact from './pages/Contact.jsx'
 
 
 const router= createBrowserRouter([{
@@ -32,7 +34,16 @@ const router= createBrowserRouter([{
   },{
     path: 'readblog',
     element: <ReadBlog/>
+  },
+  {
+    path: 'service',
+    element: <Service/>
+  },
+  {
+    path: 'contact',
+    element: <Contact/>
   }
+  
 ]
 }])
 

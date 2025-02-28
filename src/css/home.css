@@ -542,6 +542,30 @@ overflow: hidden;
   transition: .5s ease-in-out;
 }
 
+.blog .view-moreBtn span{
+  background: #000;
+  border-radius: 100%;
+  margin-left: 14px;
+  padding: 9px;
+}
+.blog .view-moreBtn:hover span{
+  background: var(--neon);
+}
+.blog .view-moreBtn:hover path{
+  fill: var(--bg) !important;
+}
+.blog .view-moreBtn{
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin-top: 163px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 .contact h3{
   font-size: 32px;
   font-weight: 700;
@@ -616,7 +640,7 @@ overflow: hidden;
   color: var(--neon);
 }
 .footer .col-span-4 ul li{
-  display: flex;
+  display: flex ;
   align-items: center;
   
 }
@@ -734,6 +758,7 @@ overflow: hidden;
   .blog .cards .card{
 
     width: 100%;
+    padding: 20px 0;
   
   }
   .projects .project h3{
@@ -749,6 +774,12 @@ overflow: hidden;
 }
   .projects .project .description {
     width: auto;
+}
+  .projects .view-more{
+    font-size: 22px;
+}
+  .blog .view-moreBtn{
+    font-size: 22px;
 }
 .blog .cards .card{
   height: auto;

@@ -7,30 +7,6 @@ import blogImg from "../assets/blogImg.jpg";
 import TypingEffect from "../components/TypingEffect";
 
 function Home() {
-  useEffect(() => {
-    const follower = document.createElement("div");
-    follower.className = "mouse-follower";
-    document.body.appendChild(follower);
-
-    const outerCircle = document.createElement("div");
-    outerCircle.className = "outer-circle";
-    document.body.appendChild(outerCircle);
-
-    const moveFollower = (e) => {
-      follower.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-      outerCircle.style.transform = `translate(${e.clientX - 10}px, ${
-        e.clientY - 10
-      }px)`;
-    };
-
-    window.addEventListener("mousemove", moveFollower);
-
-    return () => {
-      window.removeEventListener("mousemove", moveFollower);
-      document.body.removeChild(follower);
-      document.body.removeChild(outerCircle);
-    };
-  }, []);
   return (
     <>
       {/* banner start  */}
@@ -53,7 +29,7 @@ function Home() {
                   <TypingEffect />
                 </span>
               </p>
-              <p className="w-[450px] mt-[27px] mb-[63px]">
+              <p className="max-w-[450px] mt-[27px] mb-[63px]">
                 A passionate web developer based from Bangladesh.With a keen eye
                 for detail and a passion for web design, I specialize in
                 creating visually captivating and highlyfunctional websites
@@ -322,7 +298,7 @@ function Home() {
           <div className="grid grid-cols-12 bg-black px-[71px] py-[91px] rounded-[10px]">
             <div className="lg:col-span-6 col-span-12">
               <p>About Me</p>
-              <h2 className="max-w-[515px] lg:text-[32px] text-[22px] font-bold">
+              <h2 className="max-w-[515px] lg:text-[32px] text-[28px] font-bold">
                 Professional_
                 <span className="text-[#C9F31D] inline-block">
                   Problem Solutions
@@ -330,8 +306,7 @@ function Home() {
                 For Digital Products
               </h2>
               <p className="max-w-[350px] mt-[16px] mb-[35px]">
-                Sed ut perspiciatis unde omnis iste natus to voluptatem
-                accusantium doloremque laudantium, totam rem aperiamc
+              A Passionate Frontend Developer and a tech enthusiast from Bangladesh, Love to dive Deep into the Sea of techverse.
               </p>
               <div className="grid grid-cols-12">
                 <div className="lg:col-span-6 mb-[10px] lg:mb-0 col-span-12">
@@ -436,7 +411,7 @@ function Home() {
       </div>
       {/* about end  */}
       {/* service start  */}
-      <div className="service pt-[109px] pb-[139px]">
+      <div id="service" className="service pt-[109px] pb-[139px]">
         <span className="seriveShape">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -585,8 +560,7 @@ function Home() {
                 </span>
               </h2>
               <p className="max-w-[350px] mt-[16px] mb-[67px] ">
-                Sed ut perspiciatis unde omnis iste natus to voluptatem
-                accusantium doloremque laudantium, totam rem aperiamc
+              Skilled in HTML, CSS, JavaScript, and React, with a strong understanding of responsive design, web performance, and modern web development practices.
               </p>
               <button id="button" className="flex items-center text-[20px]">
                 Learn More{" "}
@@ -797,7 +771,7 @@ function Home() {
               <span className="text-[#C9F31D]">Projects</span>
             </h2>
           </div>
-          <div className="project mb-[60px] lg:flex justify-between text-center items-center">
+          <div className="project mb-[60px] lg:flex justify-between lg:text-start text-start items-center">
             <div className="img">
               <img src={projectImg} alt="" />
             </div>
@@ -824,7 +798,7 @@ function Home() {
               </button>
             </div>
           </div>
-          <div className="project text-center flex-row-reverse lg:flex justify-between items-center">
+          <div className="project lg:text-start text-start flex-row-reverse lg:flex justify-between items-center">
             <div className="img">
               <img src={projectImg} alt="" />
             </div>
@@ -851,7 +825,7 @@ function Home() {
               </button>
             </div>
           </div>
-          <div className="project text-center mt-[60px] lg:flex justify-between items-center">
+          <div className="project lg:text-start text-start mt-[60px] lg:flex justify-between items-center">
             <div className="img">
               <img src={projectImg} alt="" />
             </div>
@@ -906,13 +880,13 @@ function Home() {
         <div className="container">
           <div className="title text-center">
             <p>News & Blog</p>
-            <h2 className="lg:text-[42px] text-[32px] mt-[30px] mb-[76px] h2 font-bold">
+            <h2 className="lg:text-[42px] text-[32px] lg:mt-[30px] lg:mb-[76px] mb-10 h2 font-bold">
               Latest News & <span className="text-[#C9F31D] ">Blog</span>
             </h2>
           </div>
           <div className="grid mb-[30px] cards lg:grid-cols-12">
             <div className="card mb-3 lg:mb-[30px] lg:col-span-6 col-span-12 mx-auto">
-              <div className="img mr-[10px]">
+              <div className="img lg:mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
               <div className="description mt-5 lg:mt-0 ">
@@ -940,7 +914,7 @@ function Home() {
               </div>
             </div>
             <div className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
-              <div className="img mr-[10px]">
+              <div className="img lg:mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
               <div className="description mt-5 lg:mt-0">
@@ -968,7 +942,7 @@ function Home() {
               </div>
             </div>
             <div className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
-              <div className="img mr-[10px]">
+              <div className="img lg:mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
               <div className="description mt-5 lg:mt-0">
@@ -996,7 +970,7 @@ function Home() {
               </div>
             </div>
             <div className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
-              <div className="img mr-[10px]">
+              <div className="img lg:mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
               <div className="description mt-5 lg:mt-0">
@@ -1024,6 +998,25 @@ function Home() {
               </div>
             </div>
           </div>
+          <h5 className="view-moreBtn">
+            View More{" "}
+            <span>
+              {" "}
+              <svg
+                className="rotate-45"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 15 15"
+              >
+                <path
+                  fill="currentColor"
+                  d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                />
+              </svg>
+            </span>
+          </h5>
+          
         </div>
       </div>
       {/* blog end  */}
@@ -1031,15 +1024,15 @@ function Home() {
       <div className="contact py-[122px]">
         <div className="container">
           <div className="grid text-center grid-cols-12">
-            <div className="lg:col-span-4 col-span-12 flex flex-col items-center lg:items-start justify-center">
+            <div className="lg:col-span-4 col-span-12 flex flex-col items-center lg:text-left lg:items-start justify-center">
               <p>Get in Touch</p>
               <h3>
                 Let’s Talk For your
                 <span className="text-[#C9F31D] block ">Next Projects</span>
               </h3>
-              <p className="lg:w-[349px]">
-                Sed ut perspiciatis unde omnis iste natus to voluptatem
-                accusantium doloremque laudantium, totam rem aperiamc
+              <p className="lg:w-[349px] w-[100%] px-2 lg:px-0">
+              If you have any questions, feel free to reach out to us. Fill out the form below and we will get back to you as soon as possible.
+
               </p>
               <ul>
                 <li className="flex items-center">
@@ -1072,7 +1065,7 @@ function Home() {
                       />
                     </svg>
                   </span>
-                  2+ Years Experience
+                  Responsive and stylish Web Desgin
                 </li>
                 <li className="flex items-center">
                   <span className="mr-[13px] p-[12px] bg-[#C9F31D] rounded-full">
@@ -1088,7 +1081,7 @@ function Home() {
                       />
                     </svg>
                   </span>
-                  2+ Years Experience
+                  Modern web frameworks
                 </li>
                 <li className="flex items-center">
                   <span className="mr-[13px] p-[12px] bg-[#C9F31D] rounded-full">
@@ -1104,13 +1097,13 @@ function Home() {
                       />
                     </svg>
                   </span>
-                  2+ Years Experience
+                  Scalable database
                 </li>
               </ul>
             </div>
             <div className="lg:col-span-7 mt-10 lg:mt-0 col-span-12 lg:ml-auto">
               <div className="grid grid-cols-12">
-                <div className="lg:col-span-6 col-span-12 lg:mr-[38px] flex flex-col lg:ml-auto">
+                <div className="lg:col-span-6 col-span-12 lg:mr-[38px] flex flex-col lg:text-left lg:ml-auto">
                   <label htmlFor="name">Full Name</label>
                   <input
                     className="p-[22px] lg:w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
@@ -1118,7 +1111,7 @@ function Home() {
                     type="text"
                   />
                 </div>
-                <div className="lg:col-span-6 col-span-12 flex flex-col lg:ml-auto">
+                <div className="lg:col-span-6 lg:text-left col-span-12 flex flex-col lg:ml-auto">
                   <label htmlFor="email" type="email">
                     Email Address
                   </label>
@@ -1128,7 +1121,7 @@ function Home() {
                     type="text"
                   />
                 </div>
-                <div className="lg:col-span-6 col-span-12 lg:mr-[38px] flex flex-col lg:ml-auto">
+                <div className="lg:col-span-6 lg:text-left col-span-12 lg:mr-[38px] flex flex-col lg:ml-auto">
                   <label htmlFor="phonenumber">Phone Number</label>
                   <input
                     className="p-[22px] lg:w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
@@ -1136,7 +1129,7 @@ function Home() {
                     type="phone"
                   />
                 </div>
-                <div className="lg:col-span-6 col-span-12 flex flex-col lg:ml-auto">
+                <div className="lg:col-span-6 lg:text-left col-span-12 flex flex-col lg:ml-auto">
                   <label htmlFor="name">Subject</label>
                   <input
                     className="p-[22px] lg:w-[350px] h-[68px] rounded-[20px] bg-black mb-[30px] mt-[11px]"
@@ -1144,7 +1137,7 @@ function Home() {
                     type="text"
                   />
                 </div>
-                <div className="col-span-12 flex flex-col lg:ml-auto">
+                <div className="col-span-12 lg:text-left flex flex-col lg:ml-auto">
                   <label htmlFor="name">Text Area</label>
                   <input
                     type="text"

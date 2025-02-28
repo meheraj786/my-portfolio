@@ -1,0 +1,86 @@
+.skillPage{
+  background: url(../assets/skillbg.png);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  position: relative;
+}
+
+.skillPage .line{
+  position: absolute;
+  width: 1064px;
+  height: 5px;
+  background: rgba(200, 243, 29, 0.11);
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  box-shadow: 0 0 100px 100px rgba(200, 243, 29, 0.11);
+  animation: scale 2s infinite linear;
+
+}
+.skillPage .container{
+  background: #000;
+  padding: 70px 0;
+  padding-left: 120px;
+  
+}
+
+.skillPage .box{
+  border: 1px solid var(--bg);
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+
+}
+
+
+
+.skillPage .box:hover{
+  border: 1px solid var(--neon);
+}
+.skillPage .box:hover .percent{
+  background: var(--neon);
+  padding: 4px 38px;
+  color: var(--bg);
+  border-radius: 20px;
+}
+.skillPage h3{
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+
+.skillPage .percent{
+  font-size: 28px;
+  font-weight: 700;
+  background: var(--bg);
+  padding: 4px 38px;
+  color: gray;
+  border-radius: 20px;
+}
+.skillPage .box svg{
+  width: 60px;
+  height: 60px;
+}
+
+.skillPage span svg path{
+  fill: var(--bg);
+}
+
+
+.skillPage button:hover span {
+  background: #000;
+  fill: #C9F31D;
+}
+.skillPage button svg path{
+  fill: var(--bg);
+}
+.skillPage button:hover svg path{
+  fill: var(--neon);
+}
+
+.skillPage .container {
+  background: #000;
+  padding: 70px 0;
+  padding-left: 0px;
+}
