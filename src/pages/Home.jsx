@@ -322,14 +322,14 @@ function Home() {
           <div className="grid grid-cols-12 bg-black px-[71px] py-[91px] rounded-[10px]">
             <div className="lg:col-span-6 col-span-12">
               <p>About Me</p>
-              <h2 className="max-w-[515px] text-[32px] font-bold">
+              <h2 className="max-w-[515px] lg:text-[32px] text-[22px] font-bold">
                 Professional_
                 <span className="text-[#C9F31D] inline-block">
                   Problem Solutions
                 </span><br />
                 For Digital Products
               </h2>
-              <p className="w-[350px] mt-[16px] mb-[35px]">
+              <p className="max-w-[350px] mt-[16px] mb-[35px]">
                 Sed ut perspiciatis unde omnis iste natus to voluptatem
                 accusantium doloremque laudantium, totam rem aperiamc
               </p>
@@ -409,7 +409,7 @@ function Home() {
               </div>
             </div>
             <div className="lg:col-span-6 col-span-12 mt-10 lg:mt-0 lg:ml-auto mx-auto">
-              <div className="w-[346px] h-[363px] aboutImg bg-amber-50 mx-auto rounded-[10px]">
+              <div className="lg:w-[346px] min-w-[250px] lg:h-[363px] min-h-[250px] aboutImg bg-amber-50 mx-auto rounded-[10px]">
                 <span className="aboutShape">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -423,10 +423,10 @@ function Home() {
                     />
                   </svg>
                 </span>
-                <p className="py-[13px] p1 rounded-[20px] px-[15px] bg-white">
+                <p className="max-py-[13px] lg:py-[13px] p1 rounded-[20px] px-[15px] bg-white">
                   MERN Stack Developer
                 </p>
-                <p className="py-[13px] p2 rounded-[20px] px-[44px] bg-white">
+                <p className="max-py-[13px] lg:py-[13px] p2 rounded-[20px] px-[44px] bg-white">
                   Meheraj Hosen
                 </p>
               </div>
