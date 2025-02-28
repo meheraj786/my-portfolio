@@ -453,7 +453,7 @@ function Home() {
         <div className="container">
           <div className="serviceTitle mb-[40px] text-center">
             <p>Popular Services</p>
-            <h2 className="max-w-[600px] mx-auto font-bold text-[42px] text-center">
+            <h2 className="max-w-[600px] mx-auto font-bold lg:text-[42px] text-[32px] text-center">
               My <span className="text-[#C9F31D]">Special Service</span> For
               your Business Development
             </h2>
@@ -462,7 +462,7 @@ function Home() {
             <div className="lg:col-span-6 col-span-12">
               <div className="box flex items-center justify-between max-w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
                 <div className="text">
-                  <h3 className="text-[32px] text-bold text-white">
+                  <h3 className="lg:text-[32px] text-[22px] text-bold text-white">
                   Responsive Web Design
                   </h3>
                   <p className="text-[16px]">
@@ -576,7 +576,7 @@ function Home() {
         <div className="line"></div>
         <div className="container bg-[#131313] rounded-[20px]">
           <div className="grid grid-cols-12">
-            <div className="lg:col-span-4 col-span-12 flex flex-col justify-center">
+            <div className="lg:col-span-4 col-span-12 lg:flex flex-col text-center lg:text-left justify-center">
               <p>My Skill</p>
               <h2 className="text-[32px] font-bold">
                 Let’s Explore Popular{" "}
@@ -584,7 +584,7 @@ function Home() {
                   Skills & Experience
                 </span>
               </h2>
-              <p className="w-[350px] mt-[16px] mb-[67px] ">
+              <p className="max-w-[350px] mt-[16px] mb-[67px] ">
                 Sed ut perspiciatis unde omnis iste natus to voluptatem
                 accusantium doloremque laudantium, totam rem aperiamc
               </p>
