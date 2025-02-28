@@ -737,8 +737,13 @@ overflow: hidden;
     font-family: "Lexend", sans-serif;
     margin: 0;
     margin-top: 13px;
-    width: auto
-  }.projects .project .description {
+    width: 10px;
+  }
+  .projects .project h3 {
+    min-width: 100%;
+    margin-bottom: 17px;
+}
+  .projects .project .description {
     width: auto;
 }
 .blog .cards .card{
@@ -768,7 +773,7 @@ overflow: hidden;
 
 }
 .blog .cards .card h5{
-  font-size: 22px;
-  width: 295px;
+  font-size: 28px;
+  width: 100%;
 }
 }

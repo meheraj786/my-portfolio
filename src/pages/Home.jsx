@@ -915,7 +915,7 @@ function Home() {
               <div className="img mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
-              <div className="description ">
+              <div className="description mt-5 lg:mt-0 ">
                 <p>31 February 2025</p>
                 <h5 className=" mt-[3px] mb-[6px] font-bold">
                   Beginner Guide of tech industry
@@ -943,7 +943,7 @@ function Home() {
               <div className="img mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
-              <div className="description">
+              <div className="description mt-5 lg:mt-0">
                 <p>31 February 2025</p>
                 <h5 className=" mt-[3px] mb-[6px] font-bold">
                   Beginner Guide of tech industry
@@ -971,7 +971,7 @@ function Home() {
               <div className="img mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
-              <div className="description">
+              <div className="description mt-5 lg:mt-0">
                 <p>31 February 2025</p>
                 <h5 className=" mt-[3px] mb-[6px] font-bold">
                   Beginner Guide of tech industry
@@ -999,7 +999,7 @@ function Home() {
               <div className="img mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
-              <div className="description">
+              <div className="description mt-5 lg:mt-0">
                 <p>31 February 2025</p>
                 <h5 className=" mt-[3px] mb-[6px] font-bold">
                   Beginner Guide of tech industry

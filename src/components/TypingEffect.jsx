@@ -6,7 +6,7 @@ const TypingEffect = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['MERN Stack Developer', 'Full Stack Developer', 'Web Developer'],
+      strings: ['MERN Stack Dev', 'Full Stack Dev', 'Web Dev'],
       typeSpeed: 40,
       backSpeed: 50,
       loop: true,
