@@ -6,6 +6,7 @@ import blogImg from "../assets/blogImg.jpg";
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import TypingEffect from "../components/TypingEffect";
+import window from "../assets/window.png";
 
 function Home() {
   const bannerRightRef= useRef(null);
@@ -31,6 +32,7 @@ function Home() {
   const contactLeftRef= useRef(null);
   const contactRightRef= useRef(null);
   const bodyShape = useRef(null);
+  const windowRef = useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -57,6 +59,7 @@ function Home() {
     const el21 = contactLeftRef.current;
     const el22 = contactRightRef.current;
     const el23 = bodyShape.current;
+    const el24 = windowRef.current;
 
 
     gsap.fromTo(el, 
@@ -338,6 +341,7 @@ function Home() {
       }
     );
 
+
   }, []);
   return (
     <>
@@ -430,7 +434,7 @@ function Home() {
               </button>
             </div>
             <div ref={bannerRightRef} className="col-span-12  lg:col-span-7 flex items-center lg:justify-end">
-              <img src={bannerShape} />
+              <img className="floating" src={bannerShape} />
             </div>
           </div>
         </div>
@@ -731,10 +735,10 @@ function Home() {
                     />
                   </svg>
                 </span>
-                <p ref={aboutpRef} className="max-py-[13px] lg:py-[13px] p1 rounded-[20px] px-[15px] bg-white">
+                <p ref={aboutpRef} className="max-py-[13px] floating lg:py-[13px] p1 rounded-[20px] px-[15px] bg-white">
                   MERN Stack Developer
                 </p>
-                <p ref={aboutp2Ref} className="max-py-[13px] lg:py-[13px] p2 rounded-[20px] px-[44px] bg-white">
+                <p ref={aboutp2Ref} className="max-py-[13px] floating lg:py-[13px] p2 rounded-[20px] px-[44px] bg-white">
                   Meheraj Hosen
                 </p>
               </div>
@@ -914,7 +918,7 @@ function Home() {
               </button>
             </div>
             <div ref={skillsRightRef} className="lg:col-span-8 col-span-12 mt-10 lg:mt-0 flex justify-center flex-wrap">
-              <div className="box lg:mb-[43px] w-[161px] h-[197px] mr-[10px] rounded-[20px] flex flex-col justify-center items-center">
+              <div className="box floating lg:mb-[43px] w-[161px] h-[197px] mr-[10px] rounded-[20px] flex flex-col justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="60"
@@ -945,7 +949,7 @@ function Home() {
                 <h3>Figma</h3>
                 <div className="percent">50%</div>
               </div>
-              <div className="box w-[161px] h-[197px] rounded-[20px] flex flex-col justify-center mr-[10px] items-center">
+              <div className="box floating w-[161px] h-[197px] rounded-[20px] flex flex-col justify-center mr-[10px] items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="256"
@@ -973,7 +977,7 @@ function Home() {
                 <h3>HTML</h3>
                 <div className="percent">50%</div>
               </div>
-              <div className="box w-[161px] h-[197px] rounded-[20px] flex flex-col justify-center mr-[10px] items-center">
+              <div className="box floating w-[161px] h-[197px] rounded-[20px] flex flex-col justify-center mr-[10px] items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="256"
@@ -1001,7 +1005,7 @@ function Home() {
                 <h3>CSS</h3>
                 <div className="percent">50%</div>
               </div>
-              <div className="box w-[161px] h-[197px] rounded-[20px] flex flex-col justify-center mr-[10px] items-center">
+              <div className="box floating w-[161px] h-[197px] rounded-[20px] flex flex-col justify-center mr-[10px] items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -1014,7 +1018,7 @@ function Home() {
                 <h3>JS</h3>
                 <div className="percent">50%</div>
               </div>
-              <div className="box w-[161px] h-[197px] rounded-[20px] mr-[10px] flex flex-col justify-center items-center">
+              <div className="box floating w-[161px] h-[197px] rounded-[20px] mr-[10px] flex flex-col justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="256"
@@ -1040,7 +1044,7 @@ function Home() {
                 <h3>MongoDB</h3>
                 <div className="percent">50%</div>
               </div>
-              <div className="box w-[161px] h-[197px] rounded-[20px] mr-[10px] flex flex-col justify-center items-center">
+              <div className="box floating w-[161px] h-[197px] rounded-[20px] mr-[10px] flex flex-col justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -1055,7 +1059,7 @@ function Home() {
                 <h3>Express</h3>
                 <div className="percent">50%</div>
               </div>
-              <div className="box w-[161px] h-[197px] rounded-[20px] mr-[10px] flex flex-col justify-center items-center">
+              <div className="box floating w-[161px] h-[197px] rounded-[20px] mr-[10px] flex flex-col justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="128"
@@ -1070,7 +1074,7 @@ function Home() {
                 <h3>React</h3>
                 <div className="percent">50%</div>
               </div>
-              <div className="box w-[161px] h-[197px] rounded-[20px] mr-[10px] flex flex-col justify-center items-center">
+              <div className="box floating w-[161px] h-[197px] rounded-[20px] mr-[10px] flex flex-col justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"

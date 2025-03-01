@@ -7,17 +7,19 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger';
 function Footer() {
   gsap.registerPlugin(ScrollTrigger);
   const footerRef = useRef(null); 
+  const footerMainRef = useRef(null);
   useEffect(() => {
     gsap.fromTo(footerRef.current, 
+
       { opacity: 0, y: "100%" },
       { 
         opacity: 1, 
         y: 0, 
         // duration: 3, 
         scrollTrigger: {
-          trigger: footerRef.current,
-          start: "top 100%",
-          end: "top 100%",
+          trigger: footerMainRef.current,
+          start: "top center",
+          end: "top 80%",
           scrub: 2,
         }
       }
@@ -25,7 +27,7 @@ function Footer() {
   }, []);
   return (
     <>
-      <div  className="footer pt-[79px]">
+      <div ref={footerMainRef}  className=" overflow-hidden footer pt-[79px]">
         <div ref={footerRef} className="container py-[114px]  bg-black rounded-[20px]">
           <div className="grid grid-cols-12">
             <div className="lg:col-span-4 col-span-12 mx-auto">
