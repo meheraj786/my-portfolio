@@ -10,10 +10,29 @@ import TypingEffect from "../components/TypingEffect";
 function Home() {
   const bannerRightRef= useRef(null);
   const bannerLeftRef= useRef(null);
+  const aboutLeftRef= useRef(null);
+  const aboutpRef= useRef(null);
+  const aboutp2Ref= useRef(null);
+  const aboutRightRef= useRef(null);
+  const aboutShapeRef= useRef(null);
+  const serviceLeft1Ref= useRef(null);
+  const serviceLeft2Ref= useRef(null);
+  const serviceRight1Ref= useRef(null);
+  const serviceRight2Ref= useRef(null);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const el = bannerRightRef.current;
     const el2 = bannerLeftRef.current;
+    const el3 = aboutLeftRef.current;
+    const el4 = aboutpRef.current;
+    const el5 = aboutp2Ref.current;
+    const el6 = aboutRightRef.current;
+    const el7 = aboutShapeRef.current;
+    const el8 = serviceLeft1Ref.current;
+    const el9 = serviceLeft2Ref.current;
+    const el10 = serviceRight1Ref.current;
+    const el11 = serviceRight2Ref.current;
+
 
     gsap.fromTo(el, 
       { opacity: 0, x: "-100%" },
@@ -41,6 +60,113 @@ function Home() {
        
       }
     );
+    gsap.fromTo(el3, 
+      { opacity: 0, x: "100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        duration: 3, 
+        scrollTrigger: {
+          trigger: el3,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    );
+    gsap.fromTo(el4, 
+      { opacity: 0, x: "-100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        duration: 3, 
+        scrollTrigger: {
+          trigger: el3,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    );
+    gsap.fromTo(el5, 
+      { opacity: 0, x: "-100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        duration: 3, 
+        scrollTrigger: {
+          trigger: el3,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    );
+
+    gsap.fromTo(el8, 
+      { opacity: 0, x: "-100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        duration: 3, 
+        scrollTrigger: {
+          trigger: el8,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    );
+    gsap.fromTo(el9, 
+      { opacity: 0, x: "-100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        duration: 3, 
+        scrollTrigger: {
+          trigger: el9,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    );
+    gsap.fromTo(el10, 
+      { opacity: 0, x: "100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        // duration: 3, 
+        scrollTrigger: {
+          trigger: el10,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    );
+    gsap.fromTo(el11, 
+      { opacity: 0, x: "100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        duration: 3, 
+        scrollTrigger: {
+          trigger: el11,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    );
+    
 
   }, []);
   return (
@@ -332,7 +458,7 @@ function Home() {
       <div className="about">
         <div className="container py-[148px]">
           <div className="grid grid-cols-12 bg-black px-[71px] py-[91px] rounded-[10px]">
-            <div className="lg:col-span-6 col-span-12">
+            <div ref={aboutLeftRef} className="lg:col-span-6 col-span-12">
               <p>About Me</p>
               <h2 className="max-w-[515px] lg:text-[32px] text-[28px] font-bold">
                 Professional_
@@ -419,9 +545,9 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-6 col-span-12 mt-10 lg:mt-0 lg:ml-auto mx-auto">
+            <div ref={aboutRightRef} className="lg:col-span-6 col-span-12 mt-10 lg:mt-0 lg:ml-auto mx-auto">
               <div className="lg:w-[346px] min-w-[250px] lg:h-[363px] min-h-[250px] aboutImg bg-amber-50 mx-auto rounded-[10px]">
-                <span className="aboutShape">
+                <span ref={aboutShapeRef} className="aboutShape">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="77"
@@ -434,10 +560,10 @@ function Home() {
                     />
                   </svg>
                 </span>
-                <p className="max-py-[13px] lg:py-[13px] p1 rounded-[20px] px-[15px] bg-white">
+                <p ref={aboutpRef} className="max-py-[13px] lg:py-[13px] p1 rounded-[20px] px-[15px] bg-white">
                   MERN Stack Developer
                 </p>
-                <p className="max-py-[13px] lg:py-[13px] p2 rounded-[20px] px-[44px] bg-white">
+                <p ref={aboutp2Ref} className="max-py-[13px] lg:py-[13px] p2 rounded-[20px] px-[44px] bg-white">
                   Meheraj Hosen
                 </p>
               </div>
@@ -470,7 +596,7 @@ function Home() {
             </h2>
           </div>
           <div className="grid grid-cols-12">
-            <div className="lg:col-span-6 col-span-12">
+            <div ref={serviceLeft1Ref} className="lg:col-span-6 col-span-12">
               <div className="box flex items-center justify-between max-w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
                 <div className="text">
                   <h3 className="lg:text-[32px] text-[22px] text-bold text-white">
@@ -497,7 +623,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-6 col-span-12 lg:ml-auto">
+            <div ref={serviceRight1Ref} className="lg:col-span-6 col-span-12 lg:ml-auto">
               <div className="box mb-[98px] flex items-center justify-between max-w-[576px] lg:w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
                 <div className="text">
                   <h3 className="text-[32px] text-bold text-white">
@@ -524,7 +650,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-6 col-span-12">
+            <div ref={serviceLeft2Ref} className="lg:col-span-6 col-span-12">
               <div className="box flex items-center justify-between max-w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
                 <div className="text">
                   <h3 className="text-[32px] text-bold text-white">
@@ -551,7 +677,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-6 col-span-12 lg:ml-auto ">
+            <div ref={serviceRight2Ref} className="lg:col-span-6 col-span-12 lg:ml-auto ">
               <div className="box flex items-center justify-between lg:w-[576px] max-w-[576px] h-[140px] bg-[#1F1F1F] rounded-[20px] px-[20px] py-[35px]">
                 <div className="text">
                   <h3 className="text-[32px] text-bold text-white">
