@@ -19,6 +19,16 @@ function Home() {
   const serviceLeft2Ref= useRef(null);
   const serviceRight1Ref= useRef(null);
   const serviceRight2Ref= useRef(null);
+  const skillsLeftRef= useRef(null);
+  const skillsRightRef= useRef(null);
+  const projectLeftRef= useRef(null);
+  const projectLeft1Ref= useRef(null);
+  const projectRightRef= useRef(null);
+  const blogLeftRef= useRef(null);
+  const blogRightRef= useRef(null);
+  const blogRight1Ref= useRef(null);
+  const blogLeft1Ref= useRef(null);
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const el = bannerRightRef.current;
@@ -32,21 +42,23 @@ function Home() {
     const el9 = serviceLeft2Ref.current;
     const el10 = serviceRight1Ref.current;
     const el11 = serviceRight2Ref.current;
+    const el12 = skillsLeftRef.current;
+    const el13 = skillsRightRef.current;
+    const el14 = projectLeftRef.current;
+    const el16 = projectLeft1Ref.current;
+    const el15 = projectRightRef.current;
+    const el17 = blogLeftRef.current;
+    const el19 = blogLeft1Ref.current;
+    const el18 = blogRightRef.current;
+    const el20 = blogRightRef.current;
 
 
     gsap.fromTo(el, 
-      { opacity: 0, x: "-100%" },
+      { opacity: 0, x: "100%" },
       { 
         opacity: 1, 
         x: 0, 
         duration: 2, 
-        scrollTrigger: {
-          trigger: el,
-          start: "top 80%",
-          end: "bottom 30%",
-          markers: true,
-          scrub: 2,
-        }
       }
     );
     gsap.fromTo(el2, 
@@ -166,6 +178,141 @@ function Home() {
         }
       }
     );
+    gsap.fromTo(el12, 
+      { opacity: 0, x: "-100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        // duration: 3, 
+        scrollTrigger: {
+          trigger: el12,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    );
+    gsap.fromTo(el13, 
+      { opacity: 0, x: "100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        duration: 3, 
+        scrollTrigger: {
+          trigger: el13,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    );
+    gsap.fromTo(el14, 
+      { opacity: 0, x: "-100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        // duration: 3, 
+        scrollTrigger: {
+          trigger: el14,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    );
+    gsap.fromTo(el16, 
+      { opacity: 0, x: "-100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        // duration: 3, 
+        scrollTrigger: {
+          trigger: el16,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    );
+    gsap.fromTo(el15, 
+      { opacity: 0, x: "100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        duration: 3, 
+        scrollTrigger: {
+          trigger: el15,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    )
+    gsap.fromTo(el17, 
+      { opacity: 0, x: "-100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        // duration: 3, 
+        scrollTrigger: {
+          trigger: el17,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    );
+    gsap.fromTo(el18, 
+      { opacity: 0, x: "100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        duration: 3, 
+        scrollTrigger: {
+          trigger: el18,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    )
+    gsap.fromTo(el19, 
+      { opacity: 0, x: "-100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        // duration: 3, 
+        scrollTrigger: {
+          trigger: el19,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    );
+    gsap.fromTo(el20, 
+      { opacity: 0, x: "100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        duration: 3, 
+        scrollTrigger: {
+          trigger: el20,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    )
     
 
   }, []);
@@ -713,7 +860,7 @@ function Home() {
         <div className="line"></div>
         <div className="container bg-[#131313] rounded-[20px]">
           <div className="grid grid-cols-12">
-            <div className="lg:col-span-4 col-span-12 flex items-center  lg:items-start flex-col text-center lg:text-left justify-center">
+            <div ref={skillsLeftRef} className="lg:col-span-4 col-span-12 flex items-center  lg:items-start flex-col text-center lg:text-left justify-center">
               <p>My Skill</p>
               <h2 className="text-[32px] font-bold">
                 Let’s Explore Popular{" "}
@@ -742,7 +889,7 @@ function Home() {
                 </span>
               </button>
             </div>
-            <div className="lg:col-span-8 col-span-12 mt-10 lg:mt-0 flex justify-center flex-wrap">
+            <div ref={skillsRightRef} className="lg:col-span-8 col-span-12 mt-10 lg:mt-0 flex justify-center flex-wrap">
               <div className="box lg:mb-[43px] w-[161px] h-[197px] mr-[10px] rounded-[20px] flex flex-col justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -933,7 +1080,7 @@ function Home() {
               <span className="text-[#C9F31D]">Projects</span>
             </h2>
           </div>
-          <div className="project mb-[60px] lg:flex justify-between lg:text-start text-start items-center">
+          <div ref={projectLeft1Ref} className="project mb-[60px] lg:flex justify-between lg:text-start text-start items-center">
             <div className="img">
               <img src={projectImg} alt="" />
             </div>
@@ -960,7 +1107,7 @@ function Home() {
               </button>
             </div>
           </div>
-          <div className="project lg:text-start text-start flex-row-reverse lg:flex justify-between items-center">
+          <div ref={projectRightRef} className="project lg:text-start text-start flex-row-reverse lg:flex justify-between items-center">
             <div className="img">
               <img src={projectImg} alt="" />
             </div>
@@ -987,7 +1134,7 @@ function Home() {
               </button>
             </div>
           </div>
-          <div className="project lg:text-start text-start mt-[60px] lg:flex justify-between items-center">
+          <div ref={projectLeftRef} className="project lg:text-start text-start mt-[60px] lg:flex justify-between items-center">
             <div className="img">
               <img src={projectImg} alt="" />
             </div>
@@ -1047,7 +1194,7 @@ function Home() {
             </h2>
           </div>
           <div className="grid mb-[30px] cards lg:grid-cols-12">
-            <div className="card mb-3 lg:mb-[30px] lg:col-span-6 col-span-12 mx-auto">
+            <div ref={blogLeft1Ref} className="card mb-3 lg:mb-[30px] lg:col-span-6 col-span-12 mx-auto">
               <div className="img lg:mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
@@ -1075,7 +1222,7 @@ function Home() {
                 </button>
               </div>
             </div>
-            <div className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
+            <div ref={ blogLeftRef} className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
               <div className="img lg:mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
@@ -1103,7 +1250,7 @@ function Home() {
                 </button>
               </div>
             </div>
-            <div className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
+            <div ref={blogRight1Ref} className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
               <div className="img lg:mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
@@ -1131,7 +1278,7 @@ function Home() {
                 </button>
               </div>
             </div>
-            <div className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
+            <div ref={blogRightRef} className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
               <div className="img lg:mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
