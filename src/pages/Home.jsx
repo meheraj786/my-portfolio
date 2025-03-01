@@ -1,19 +1,55 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import bannerShape from "../assets/Group 31.png";
 import "../css/home.css";
 import projectImg from "../assets/Digital Agency.png";
 import blogImg from "../assets/blogImg.jpg";
-
+import gsap from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import TypingEffect from "../components/TypingEffect";
 
 function Home() {
+  const bannerRightRef= useRef(null);
+  const bannerLeftRef= useRef(null);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const el = bannerRightRef.current;
+    const el2 = bannerLeftRef.current;
+
+    gsap.fromTo(el, 
+      { opacity: 0, x: "-100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        duration: 2, 
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+          end: "bottom 30%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    );
+    gsap.fromTo(el2, 
+      { opacity: 0, x: "-100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        duration: 2, 
+        start: "top 80%",
+          end: "bottom 30%",
+       
+      }
+    );
+
+  }, []);
   return (
     <>
       {/* banner start  */}
       <div className="banner">
         <div className="container pt-[113px] pb-[98px]">
-          <div className="grid grid-cols-12 gap-4">
-            <div className="col-span-12 lg:col-span-5">
+          <div  className="grid grid-cols-12 gap-4">
+            <div ref={bannerLeftRef} className="col-span-12 lg:col-span-5">
               <p className="text-[#C9F31D] text-[32px] font-medium">
                 Hello I’m
               </p>
@@ -96,7 +132,7 @@ function Home() {
                 </span>
               </button>
             </div>
-            <div className="col-span-12 lg:col-span-7 flex items-center lg:justify-end">
+            <div ref={bannerRightRef} className="col-span-12  lg:col-span-7 flex items-center lg:justify-end">
               <img src={bannerShape} />
             </div>
           </div>
