@@ -28,6 +28,8 @@ function Home() {
   const blogRightRef= useRef(null);
   const blogRight1Ref= useRef(null);
   const blogLeft1Ref= useRef(null);
+  const contactLeftRef= useRef(null);
+  const contactRightRef= useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -51,6 +53,8 @@ function Home() {
     const el19 = blogLeft1Ref.current;
     const el18 = blogRightRef.current;
     const el20 = blogRightRef.current;
+    const el21 = contactLeftRef.current;
+    const el22 = contactRightRef.current;
 
 
     gsap.fromTo(el, 
@@ -273,7 +277,7 @@ function Home() {
       { 
         opacity: 1, 
         x: 0, 
-        duration: 3, 
+        // duration: 3, 
         scrollTrigger: {
           trigger: el18,
           start: "top 100%",
@@ -303,9 +307,39 @@ function Home() {
       { 
         opacity: 1, 
         x: 0, 
-        duration: 3, 
+        // duration: 3, 
         scrollTrigger: {
           trigger: el20,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    )
+    gsap.fromTo(el21, 
+      { opacity: 0, x: "-100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        // duration: 3, 
+        scrollTrigger: {
+          trigger: el21,
+          start: "top 100%",
+          end: "bottom 80%",
+          markers: true,
+          scrub: 2,
+        }
+      }
+    );
+    gsap.fromTo(el22, 
+      { opacity: 0, x: "100%" },
+      { 
+        opacity: 1, 
+        x: 0, 
+        // duration: 3, 
+        scrollTrigger: {
+          trigger: el22,
           start: "top 100%",
           end: "bottom 80%",
           markers: true,
@@ -1222,7 +1256,7 @@ function Home() {
                 </button>
               </div>
             </div>
-            <div ref={ blogLeftRef} className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
+            <div ref={blogRight1Ref } className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
               <div className="img lg:mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
@@ -1250,7 +1284,7 @@ function Home() {
                 </button>
               </div>
             </div>
-            <div ref={blogRight1Ref} className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
+            <div ref={blogLeftRef} className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
               <div className="img lg:mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
@@ -1333,7 +1367,7 @@ function Home() {
       <div className="contact py-[122px]">
         <div className="container">
           <div className="grid text-center grid-cols-12">
-            <div className="lg:col-span-4 col-span-12 flex flex-col items-center lg:text-left lg:items-start justify-center">
+            <div ref={contactLeftRef} className="lg:col-span-4 col-span-12 flex flex-col items-center lg:text-left lg:items-start justify-center">
               <p>Get in Touch</p>
               <h3>
                 Let’s Talk For your
@@ -1410,7 +1444,7 @@ function Home() {
                 </li>
               </ul>
             </div>
-            <div className="lg:col-span-7 mt-10 lg:mt-0 col-span-12 lg:ml-auto">
+            <div ref={contactRightRef} className="lg:col-span-7 mt-10 lg:mt-0 col-span-12 lg:ml-auto">
               <div className="grid grid-cols-12">
                 <div className="lg:col-span-6 col-span-12 lg:mr-[38px] flex flex-col lg:text-left lg:ml-auto">
                   <label htmlFor="name">Full Name</label>
