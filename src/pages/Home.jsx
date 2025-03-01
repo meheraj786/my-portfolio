@@ -30,6 +30,7 @@ function Home() {
   const blogLeft1Ref= useRef(null);
   const contactLeftRef= useRef(null);
   const contactRightRef= useRef(null);
+  const bodyShape = useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -55,6 +56,7 @@ function Home() {
     const el20 = blogRightRef.current;
     const el21 = contactLeftRef.current;
     const el22 = contactRightRef.current;
+    const el23 = bodyShape.current;
 
 
     gsap.fromTo(el, 
@@ -72,8 +74,7 @@ function Home() {
         x: 0, 
         duration: 2, 
         start: "top 80%",
-          end: "bottom 30%",
-       
+        end: "bottom 30%",
       }
     );
     gsap.fromTo(el3, 
@@ -86,7 +87,6 @@ function Home() {
           trigger: el3,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
@@ -101,7 +101,6 @@ function Home() {
           trigger: el3,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
@@ -116,12 +115,11 @@ function Home() {
           trigger: el3,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
     );
-
+    
     gsap.fromTo(el8, 
       { opacity: 0, x: "-100%" },
       { 
@@ -132,7 +130,6 @@ function Home() {
           trigger: el8,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
@@ -147,7 +144,6 @@ function Home() {
           trigger: el9,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
@@ -157,12 +153,10 @@ function Home() {
       { 
         opacity: 1, 
         x: 0, 
-        // duration: 3, 
         scrollTrigger: {
           trigger: el10,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
@@ -177,7 +171,6 @@ function Home() {
           trigger: el11,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
@@ -187,12 +180,10 @@ function Home() {
       { 
         opacity: 1, 
         x: 0, 
-        // duration: 3, 
         scrollTrigger: {
           trigger: el12,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
@@ -207,7 +198,6 @@ function Home() {
           trigger: el13,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
@@ -217,12 +207,10 @@ function Home() {
       { 
         opacity: 1, 
         x: 0, 
-        // duration: 3, 
         scrollTrigger: {
           trigger: el14,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
@@ -232,12 +220,10 @@ function Home() {
       { 
         opacity: 1, 
         x: 0, 
-        // duration: 3, 
         scrollTrigger: {
           trigger: el16,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
@@ -252,7 +238,6 @@ function Home() {
           trigger: el15,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
@@ -262,12 +247,10 @@ function Home() {
       { 
         opacity: 1, 
         x: 0, 
-        // duration: 3, 
         scrollTrigger: {
           trigger: el17,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
@@ -277,12 +260,10 @@ function Home() {
       { 
         opacity: 1, 
         x: 0, 
-        // duration: 3, 
         scrollTrigger: {
           trigger: el18,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
@@ -292,12 +273,10 @@ function Home() {
       { 
         opacity: 1, 
         x: 0, 
-        // duration: 3, 
         scrollTrigger: {
           trigger: el19,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
@@ -307,12 +286,10 @@ function Home() {
       { 
         opacity: 1, 
         x: 0, 
-        // duration: 3, 
         scrollTrigger: {
           trigger: el20,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
@@ -322,12 +299,10 @@ function Home() {
       { 
         opacity: 1, 
         x: 0, 
-        // duration: 3, 
         scrollTrigger: {
           trigger: el21,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
@@ -337,21 +312,36 @@ function Home() {
       { 
         opacity: 1, 
         x: 0, 
-        // duration: 3, 
         scrollTrigger: {
           trigger: el22,
           start: "top 100%",
           end: "bottom 80%",
-          markers: true,
           scrub: 2,
         }
       }
     )
-    
+    gsap.fromTo(el23, 
+      { 
+        y: 0,
+        x: "50%"
+      },
+      { 
+        opacity: 1, 
+        y: "100%", 
+        x: "100%",
+        scrollTrigger: {
+          trigger: el2,
+          start: "top center",
+          end: "top center",
+          scrub: 2
+        }
+      }
+    );
 
   }, []);
   return (
     <>
+
       {/* banner start  */}
       <div className="banner">
         <div className="container pt-[113px] pb-[98px]">
@@ -1228,7 +1218,7 @@ function Home() {
             </h2>
           </div>
           <div className="grid mb-[30px] cards lg:grid-cols-12">
-            <div ref={blogLeft1Ref} className="card mb-3 lg:mb-[30px] lg:col-span-6 col-span-12 mx-auto">
+            <div className="card mb-3 lg:mb-[30px] lg:col-span-6 col-span-12 mx-auto">
               <div className="img lg:mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
@@ -1256,7 +1246,7 @@ function Home() {
                 </button>
               </div>
             </div>
-            <div ref={blogRight1Ref } className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
+            <div  className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
               <div className="img lg:mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
@@ -1284,7 +1274,7 @@ function Home() {
                 </button>
               </div>
             </div>
-            <div ref={blogLeftRef} className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
+            <div className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
               <div className="img lg:mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>
@@ -1312,7 +1302,7 @@ function Home() {
                 </button>
               </div>
             </div>
-            <div ref={blogRightRef} className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
+            <div className="card mb-3 lg:mb-0 lg:col-span-6 col-span-12 mx-auto">
               <div className="img lg:mr-[10px]">
                 <img className="w-full h-full" src={blogImg} alt="" />
               </div>

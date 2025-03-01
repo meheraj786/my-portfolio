@@ -18,7 +18,6 @@ function Footer() {
           trigger: footerRef.current,
           start: "top 100%",
           end: "top 100%",
-          markers: true,
           scrub: 2,
         }
       }
