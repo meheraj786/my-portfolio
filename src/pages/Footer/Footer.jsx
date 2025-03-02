@@ -18,7 +18,7 @@ function Footer() {
         // duration: 3, 
         scrollTrigger: {
           trigger: footerMainRef.current,
-          start: "top center",
+          start: "top 80%",
           end: "top 80%",
           scrub: 2,
         }
