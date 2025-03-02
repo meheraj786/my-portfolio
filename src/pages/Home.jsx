@@ -6,7 +6,8 @@ import blogImg from "../assets/blogImg.jpg";
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import TypingEffect from "../components/TypingEffect";
-
+import myImg1 from "../assets/WhatsApp_Image_2025-01-16_at_20.51.10_eef86b3e-removebg-preview-removebg-preview (1).png"
+import myImg2 from "../assets/"
 
 function Home() {
   const bannerRef = useRef(null);
@@ -438,6 +439,7 @@ function Home() {
             </div>
             <div ref={bannerRightRef} className="col-span-12  lg:col-span-7 flex items-center lg:justify-end">
               <img className="floating" src={bannerShape} />
+              <img className="absolute rounded-full floating top-[50%] translate-y-[-55%]" src={myImg1} alt="" srcset="" />
             </div>
           </div>
         </div>
