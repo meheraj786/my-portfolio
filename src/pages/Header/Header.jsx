@@ -10,11 +10,12 @@ function Header() {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+  
 
   return (
     <>
-      <nav className='bg-[#1C1C1C] left-0 text-white py-[24px]'>
-        <div className='container flex justify-between items-center text-white pr-5 lg:pr-0 px-2 lg:px-0'>
+      <nav  className='bg-[#1C1C1C]  sticky top-0 z-50 text-white py-[24px]'>
+        <div id='nav' className='container sticky top-0 z-50 flex justify-between items-center text-white pr-5 lg:pr-0 px-2 lg:px-0'>
           <Logo />
           <div className="navlist hidden lg:block mx-auto">
             <ul className='flex items-center'>

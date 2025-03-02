@@ -6,9 +6,9 @@ import blogImg from "../assets/blogImg.jpg";
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import TypingEffect from "../components/TypingEffect";
-import window from "../assets/window.png";
 
 function Home() {
+  const bannerRef = useRef(null);
   const bannerRightRef= useRef(null);
   const bannerLeftRef= useRef(null);
   const aboutLeftRef= useRef(null);
@@ -33,6 +33,8 @@ function Home() {
   const contactRightRef= useRef(null);
   const bodyShape = useRef(null);
   const windowRef = useRef(null);
+  
+  const shapeBlueRef = useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -347,7 +349,7 @@ function Home() {
     <>
 
       {/* banner start  */}
-      <div className="banner">
+      <div ref={bannerRef} className="banner">
         <div className="container pt-[113px] pb-[98px]">
           <div  className="grid grid-cols-12 gap-4">
             <div ref={bannerLeftRef} className="col-span-12 lg:col-span-5">
@@ -439,7 +441,7 @@ function Home() {
           </div>
         </div>
         <div className="shapePurple"></div>
-        <div className="shapeBlue"></div>
+        <div ref={shapeBlueRef} className="shapeBlue"></div>
       </div>
       {/* banner end  */}
       {/* marquee start */}
@@ -918,8 +920,8 @@ function Home() {
               </button>
             </div>
             <div ref={skillsRightRef} className="lg:col-span-8 col-span-12 mt-10 lg:mt-0 flex justify-center flex-wrap">
-              <div className="box floating lg:mb-[43px] w-[161px] h-[197px] mr-[10px] rounded-[20px] flex flex-col justify-center items-center">
-                <svg
+              <div className="box  lg:mb-[43px] w-[161px] h-[197px] mr-[10px] rounded-[20px] flex flex-col justify-center items-center">
+                <svg className="floating"
                   xmlns="http://www.w3.org/2000/svg"
                   width="60"
                   height="60"
@@ -949,8 +951,8 @@ function Home() {
                 <h3>Figma</h3>
                 <div className="percent">50%</div>
               </div>
-              <div className="box floating w-[161px] h-[197px] rounded-[20px] flex flex-col justify-center mr-[10px] items-center">
-                <svg
+              <div className="box  w-[161px] h-[197px] rounded-[20px] flex flex-col justify-center mr-[10px] items-center">
+                <svg className="floating"
                   xmlns="http://www.w3.org/2000/svg"
                   width="256"
                   height="361"
@@ -977,8 +979,8 @@ function Home() {
                 <h3>HTML</h3>
                 <div className="percent">50%</div>
               </div>
-              <div className="box floating w-[161px] h-[197px] rounded-[20px] flex flex-col justify-center mr-[10px] items-center">
-                <svg
+              <div className="box  w-[161px] h-[197px] rounded-[20px] flex flex-col justify-center mr-[10px] items-center">
+                <svg className="floating"
                   xmlns="http://www.w3.org/2000/svg"
                   width="256"
                   height="361"
@@ -1005,8 +1007,8 @@ function Home() {
                 <h3>CSS</h3>
                 <div className="percent">50%</div>
               </div>
-              <div className="box floating w-[161px] h-[197px] rounded-[20px] flex flex-col justify-center mr-[10px] items-center">
-                <svg
+              <div className="box  w-[161px] h-[197px] rounded-[20px] flex flex-col justify-center mr-[10px] items-center">
+                <svg className="floating"
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
                   height="32"
@@ -1018,8 +1020,8 @@ function Home() {
                 <h3>JS</h3>
                 <div className="percent">50%</div>
               </div>
-              <div className="box floating w-[161px] h-[197px] rounded-[20px] mr-[10px] flex flex-col justify-center items-center">
-                <svg
+              <div className="box  w-[161px] h-[197px] rounded-[20px] mr-[10px] flex flex-col justify-center items-center">
+                <svg className="floating"
                   xmlns="http://www.w3.org/2000/svg"
                   width="256"
                   height="256"
@@ -1044,8 +1046,8 @@ function Home() {
                 <h3>MongoDB</h3>
                 <div className="percent">50%</div>
               </div>
-              <div className="box floating w-[161px] h-[197px] rounded-[20px] mr-[10px] flex flex-col justify-center items-center">
-                <svg
+              <div className="box  w-[161px] h-[197px] rounded-[20px] mr-[10px] flex flex-col justify-center items-center">
+                <svg className="floating"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -1059,8 +1061,8 @@ function Home() {
                 <h3>Express</h3>
                 <div className="percent">50%</div>
               </div>
-              <div className="box floating w-[161px] h-[197px] rounded-[20px] mr-[10px] flex flex-col justify-center items-center">
-                <svg
+              <div className="box  w-[161px] h-[197px] rounded-[20px] mr-[10px] flex flex-col justify-center items-center">
+                <svg className="floating"
                   xmlns="http://www.w3.org/2000/svg"
                   width="128"
                   height="128"
@@ -1074,8 +1076,8 @@ function Home() {
                 <h3>React</h3>
                 <div className="percent">50%</div>
               </div>
-              <div className="box floating w-[161px] h-[197px] rounded-[20px] mr-[10px] flex flex-col justify-center items-center">
-                <svg
+              <div className="box  w-[161px] h-[197px] rounded-[20px] mr-[10px] flex flex-col justify-center items-center">
+                <svg className="floating"
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
                   height="32"

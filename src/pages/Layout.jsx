@@ -16,9 +16,7 @@ function Layout() {
 
     const moveFollower = (e) => {
       follower.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-      outerCircle.style.transform = `translate(${e.clientX - 10}px, ${
-        e.clientY - 10
-      }px)`;
+      outerCircle.style.transform = `translate(${e.clientX - 10}px, ${e.clientY - 10}px)`;
     };
 
     window.addEventListener("mousemove", moveFollower);
