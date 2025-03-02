@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'; // Ensure this import
 
+
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
