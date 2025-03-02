@@ -7,7 +7,6 @@ import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import TypingEffect from "../components/TypingEffect";
 import myImg1 from "../assets/WhatsApp_Image_2025-01-16_at_20.51.10_eef86b3e-removebg-preview-removebg-preview (1).png"
-import myImg2 from "../assets/"
 
 function Home() {
   const bannerRef = useRef(null);

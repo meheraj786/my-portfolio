@@ -227,6 +227,10 @@ button{
 }
 .about .aboutImg{
   position: relative;
+  background: url(../assets/aboutImg.jpg);
+  background-size: cover;
+  background-position: center;
+
 }
 
 .about .aboutImg:hover .p1{
@@ -239,14 +243,14 @@ button{
 .about .aboutImg .p1, .p2{
   position: absolute;
   top: 40%;
-  left: -20%;
+  left: -30%;
   color: var(--bg);
   border: 2px solid white;
 }
 .about .aboutImg .p2{
   position: absolute;
   top: 65%;
-  left: -30%;
+  left: -40%;
   color: var(--bg);
 }
 
