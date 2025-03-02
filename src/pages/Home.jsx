@@ -7,6 +7,7 @@ import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import TypingEffect from "../components/TypingEffect";
 
+
 function Home() {
   const bannerRef = useRef(null);
   const bannerRightRef= useRef(null);
