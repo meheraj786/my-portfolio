@@ -40,7 +40,7 @@ function Header() {
               </li>
             </ul>
           </div>
-          <div className="right hidden lg:block">
+          <div className="right text-[22px] font-bold hidden lg:block">
             <button id='button' className='flex items-center'>Let's Talk
               <span className="p-[8px] ml-[8px] rounded-full bg-[#C9F31D]">
                 <svg className="rotate-45" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 15 15">
