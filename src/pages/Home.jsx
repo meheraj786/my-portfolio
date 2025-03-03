@@ -905,7 +905,7 @@ function Home() {
               Skilled in HTML, CSS, JavaScript, and React, with a strong understanding of responsive design, web performance, and modern web development practices.
               </p>
               <button id="button" className="flex items-center text-[20px]">
-                Learn More{" "}
+                <NavLink to="skill">Learn More</NavLink>
                 <span className="p-[8px] ml-[8px] rounded-full bg-[#C9F31D]">
                   <svg
                     className="rotate-45"
