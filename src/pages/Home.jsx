@@ -1341,7 +1341,7 @@ function Home() {
             </div>
           </div>
           <h5 className="view-moreBtn">
-            View More{" "}
+            <NavLink to="blog">View More</NavLink>
             <span>
               {" "}
               <svg
