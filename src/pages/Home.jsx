@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import {NavLink} from "react-router-dom"
 import bannerShape from "../assets/Group 31.png";
 import "../css/home.css";
 import projectImg from "../assets/Digital Agency.png";
@@ -1194,7 +1195,7 @@ function Home() {
             </div>
           </div>
           <h5 className="view-more">
-            View More{" "}
+            <NavLink to="blog">View More</NavLink>
             <span>
               {" "}
               <svg
