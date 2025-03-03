@@ -1195,7 +1195,7 @@ function Home() {
             </div>
           </div>
           <h5 className="view-more">
-            <NavLink to="blog">View More</NavLink>
+            <NavLink to="projects">View More</NavLink>
             <span>
               {" "}
               <svg
