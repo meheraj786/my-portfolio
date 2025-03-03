@@ -904,8 +904,9 @@ function Home() {
               <p className="max-w-[350px] mt-[16px] mb-[67px] ">
               Skilled in HTML, CSS, JavaScript, and React, with a strong understanding of responsive design, web performance, and modern web development practices.
               </p>
+              <NavLink to="skill">
               <button id="button" className="flex items-center text-[20px]">
-                <NavLink to="skill">Learn More</NavLink>
+                Learn More
                 <span className="p-[8px] ml-[8px] rounded-full bg-[#C9F31D]">
                   <svg
                     className="rotate-45"
@@ -921,6 +922,8 @@ function Home() {
                   </svg>
                 </span>
               </button>
+              </NavLink>
+              
             </div>
             <div ref={skillsRightRef} className="lg:col-span-8 col-span-12 mt-10 lg:mt-0 flex justify-center flex-wrap">
               <div className="box  lg:mb-[43px] w-[161px] h-[197px] mr-[10px] rounded-[20px] flex flex-col justify-center items-center">
