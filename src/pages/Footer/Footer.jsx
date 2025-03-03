@@ -1,34 +1,12 @@
 import React, {useRef, useEffect} from "react";
 import Logo from "../Logo.jsx";
 import {NavLink} from "react-router-dom";
-import gsap from 'gsap';
-import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 function Footer() {
-  gsap.registerPlugin(ScrollTrigger);
-  const footerRef = useRef(null); 
-  const footerMainRef = useRef(null);
-  useEffect(() => {
-    gsap.fromTo(footerRef.current, 
-
-      { opacity: 0, y: "100%" },
-      { 
-        opacity: 1, 
-        y: 0, 
-        // duration: 3, 
-        scrollTrigger: {
-          trigger: footerMainRef.current,
-          start: "top 80%",
-          end: "top 80%",
-          scrub: 2,
-        }
-      }
-    )
-  }, []);
   return (
     <>
-      <div ref={footerMainRef}  className=" overflow-hidden footer pt-[79px]">
-        <div ref={footerRef} className="container py-[114px]  bg-black rounded-[20px]">
+      <div  className=" overflow-hidden footer pt-[79px]">
+        <div  className="container py-[114px]  bg-black rounded-[20px]">
           <div className="grid grid-cols-12">
             <div className="lg:col-span-4 col-span-12 mx-auto">
               <Logo />
