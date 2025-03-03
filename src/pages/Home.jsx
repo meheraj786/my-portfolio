@@ -1197,8 +1197,9 @@ function Home() {
               </button>
             </div>
           </div>
-          <h5 className="view-more">
-            <NavLink to="projects">View More</NavLink>
+          <NavLink to="projects">
+          <h5 className="view-more">View More
+            
             <span>
               {" "}
               <svg
@@ -1215,6 +1216,8 @@ function Home() {
               </svg>
             </span>
           </h5>
+          </NavLink>
+          
         </div>
         <div className="glow-line"></div>
       </div>
